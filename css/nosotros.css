@@ -1,16 +1,28 @@
+:root {
+    --purple: #5f1f79;
+    --purple-light: #d8a1ff;
+}
+/* Acerca de nosotros */
+.btn-acordeon {
+    font-weight: bold;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--purple-light);
+}
+/* Fin acerca de nosotros */
+
 /*Estilo de la sección Equipo*/
 .container {
     display: flex;
-    width: 100vw;
-    background-color: aqua;
-    
+    width: 50vw;  
 }
 
 .panel {
     background-size: cover;
     background-position:  center;
     background-repeat: no-repeat;
-    height: 50vh;
+    height: 30vw;
     border-radius: 50px;
     color: #fff;
     cursor: pointer;
@@ -39,3 +51,36 @@
 }
 
 /* FIN SECCION EQUIPO*/
+
+/* Contacto */
+
+.form-contact {
+    width: 26rem;
+    padding: 0 20px;
+}
+
+.form-check-input:checked {
+    background-color: var(--purple);
+    border-color: var(--purple-light);
+}
+.btn-message {
+    background-color: var(--purple);
+    font-weight: bold;
+    border-color: var(--purple-light)!important;
+}
+
+.btn-message:hover {
+    background-color: var(--purple-light);
+    color: var(--purple);
+}
+
+/* Fin seccion contacto */
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 70%;
+    }
+    .form-contact {
+        width: 75%!important;
+    }
+  }
