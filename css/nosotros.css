@@ -2,34 +2,65 @@
     --purple: #5f1f79;
     --purple-light: #d8a1ff;
     --purple-shadow: #baa4c9;
+    --gray: #64566e24;
 }
+
 /* nav */
+.logo {
+    width: 50px;
+}
+
 .nav-container {
-    flex-grow: 0!important;
+    flex-grow: 0 !important;
 }
 
 .nav-container ul {
     gap: 20px;
 }
+
+.btn-nav {
+    border-radius: 50px;
+    border: none;
+}
+
+.btn-color {
+    background: rgb(150, 38, 162);
+    background: linear-gradient(90deg, rgba(150, 38, 162, 1) 0%, rgba(161, 24, 148, 1) 43%, rgba(255, 106, 0, 1) 100%);
+    color: white;
+    font-weight: bold;
+}
+
+.btn-color a {
+    color: white;
+    font-weight: bold;
+}
+
+.btn-color:hover {
+    background: var(--gray);
+    color: var(--purple);
+}
+
+
 /* Acerca de nosotros */
 .btn-acordeon {
     font-weight: bold;
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: var(--purple-shadow);
+    background-color: var(--gray);
 }
+
 /* Fin acerca de nosotros */
 
 /*Estilo de la sección Equipo*/
 .container {
     display: flex;
-    width: 50vw;  
+    width: 50vw;
 }
 
 .panel {
     background-size: cover;
-    background-position:  center;
+    background-position: center;
     background-repeat: no-repeat;
     height: 30vw;
     border-radius: 50px;
@@ -72,16 +103,11 @@
     background-color: var(--purple);
     border-color: var(--purple-light);
 }
+
 .btn-message {
-    background-color: var(--purple);
-    font-weight: bold;
-    border-color: var(--purple-light)!important;
+    border-color: var(--purple-light) !important;
 }
 
-.btn-message:hover {
-    background-color: var(--purple-light);
-    color: var(--purple);
-}
 
 /* Fin seccion contacto */
 
@@ -90,10 +116,12 @@
     .nav-container ul {
         gap: 10px;
     }
+
     .container {
         width: 70%;
     }
+
     .form-contact {
-        width: 75%!important;
+        width: 75% !important;
     }
-  }
+}
