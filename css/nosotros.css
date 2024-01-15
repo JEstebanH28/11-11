@@ -1,6 +1,15 @@
 :root {
     --purple: #5f1f79;
     --purple-light: #d8a1ff;
+    --purple-shadow: #baa4c9;
+}
+/* nav */
+.nav-container {
+    flex-grow: 0!important;
+}
+
+.nav-container ul {
+    gap: 20px;
 }
 /* Acerca de nosotros */
 .btn-acordeon {
@@ -8,7 +17,7 @@
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: var(--purple-light);
+    background-color: var(--purple-shadow);
 }
 /* Fin acerca de nosotros */
 
@@ -77,6 +86,10 @@
 /* Fin seccion contacto */
 
 @media screen and (max-width: 600px) {
+
+    .nav-container ul {
+        gap: 10px;
+    }
     .container {
         width: 70%;
     }
