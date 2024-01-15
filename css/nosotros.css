@@ -20,12 +20,13 @@
 
 .btn-nav {
     border-radius: 50px;
-    border: none;
+    width: 100px;
 }
 
 .btn-color {
     background: rgb(150, 38, 162);
     background: linear-gradient(90deg, rgba(150, 38, 162, 1) 0%, rgba(161, 24, 148, 1) 43%, rgba(255, 106, 0, 1) 100%);
+    border: none;
     color: white;
     font-weight: bold;
 }
@@ -45,9 +46,16 @@
 .btn-acordeon {
     font-weight: bold;
 }
-
+.accordion {
+    --bs-accordion-btn-focus-box-shadow: 0;
+}
 .accordion-button:not(.collapsed) {
     background-color: var(--gray);
+}
+
+.accordion-button:not(.collapsed) {
+    box-shadow: none;
+    color: black;
 }
 
 /* Fin acerca de nosotros */
@@ -103,11 +111,6 @@
     background-color: var(--purple);
     border-color: var(--purple-light);
 }
-
-.btn-message {
-    border-color: var(--purple-light) !important;
-}
-
 
 /* Fin seccion contacto */
 
