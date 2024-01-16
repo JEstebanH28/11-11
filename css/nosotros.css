@@ -10,8 +10,11 @@
     width: 50px;
 }
 
+.nav-color {
+    background: var(--gray)!important;
+}
 .nav-container {
-    flex-grow: 0 !important;
+    flex-grow: 0 !important;  
 }
 
 .nav-container ul {
@@ -113,6 +116,22 @@
 }
 
 /* Fin seccion contacto */
+
+/* MAIN */
+/* Hero */
+.hero {
+    background-color: var(--gray);
+    height: auto;
+}
+
+.img-planes {
+    padding: 20px;
+}
+.img-planes img {
+    width: 300px;
+    border-radius: 29% 71% 28% 72%/66% 21% 79% 34%;
+    border: 10px solid white;
+}
 
 @media screen and (max-width: 600px) {
 
