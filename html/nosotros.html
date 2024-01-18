@@ -118,41 +118,25 @@
 
   <!-- FORMULARIO DE CONTACTO -->
   <section>
-    <h2 class="text-center py-5">CONTACTANOS</h2>
-    <form class="m-auto d-flex flex-column form-contact" style="width: 26rem;">
-      <!-- Name input -->
-      <div class="form-outline mb-4">
-        <input type="text" id="formName" class="form-control" />
-        <label class="form-label" for="formName">Nombre</label>
-      </div>
+    <h2 class="text-center py-5">CONTACTANOS</h2>    
+    <!-- modify this form HTML and place wherever you want your form -->
+    <form id="fs-frm" name="contacto" accept-charset="utf-8" action="https://formspree.io/f/xyyrzael" method="post">
+        <fieldset id="fs-frm-inputs">
+          <label for="full-name">Nombre Completo</label>
+          <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+          <label for="email-address">Email</label>
+          <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+          <label for="telephone">Teléfono</label>
+          <input type="telephone" name="telephone" id="telephone" placeholder="(+57) 555-5555" required="">
+          <label for="complaint">Mensaje</label>
+          <textarea rows="6" name="mensaje" id="mensaje" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+          <input type="hidden" name="_subject" id="email-subject" value="Complaint Form Submission">
+        </fieldset>
+        <input type="submit" value="Enviar">
+      </form>
 
-      <!-- Email input -->
-      <div data-mdb-input-init class="form-outline mb-4">
-        <input type="email" id="formEmail" class="form-control" />
-        <label class="form-label" for="formEmail">Email</label>
-      </div>
-
-      <!-- Message input -->
-      <div class="form-outline mb-4">
-        <textarea class="form-control" id="formMessage" rows="4"></textarea>
-        <label class="form-label" for="formMessage">Mensaje</label>
-      </div>
-
-      <!-- Checkbox -->
-      <div class="form-check d-flex justify-content-center mb-4">
-        <div>
-          <input class="form-check-input d-flex align-items-center justify-content-center me-2" type="checkbox" value=""
-            id="formCheck" checked />
-        </div>
-        <label class="form-check-label" for="formCheck">
-          Enviar copia del mensaje
-        </label>
-      </div>
-
-      <!-- Submit button -->
-      <button type="button" class="btn btn-primary btn-block mb-4 btn-message btn-color">Enviar</button>
-    </form>
   </section>
+
 
   <!-- Script de bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
