@@ -2,19 +2,44 @@
     --purple: #5f1f79;
     --purple-light: #d8a1ff;
     --purple-shadow: #baa4c9;
-    --gray: #64566e24;
+    --fondo-nav: #ebe8e8;
+    --boton: linear-gradient(90deg, rgba(150, 38, 162, 1) 0%, rgba(161, 24, 148, 1) 43%, rgba(255, 106, 0, 1) 100%);
+    --texto-oscuro: rgb(0, 0, 0);
+    --texto-claro: #fff;
+    --naranja-logo: #ff5722;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: black;
+    line-height: 1.6;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0 1.5em;
+    margin-top: 4rem;
 }
 
 /* nav */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    
+}
 .logo {
     width: 50px;
 }
 
 .nav-color {
-    background: var(--gray)!important;
+    background: var(--fondo-nav);
 }
 .nav-container {
-    flex-grow: 0 !important;  
+    flex-grow: 0;
 }
 
 .nav-container ul {
@@ -28,7 +53,7 @@
 
 .btn-color {
     background: rgb(150, 38, 162);
-    background: linear-gradient(90deg, rgba(150, 38, 162, 1) 0%, rgba(161, 24, 148, 1) 43%, rgba(255, 106, 0, 1) 100%);
+    background: var(--boton);
     border: none;
     color: white;
     font-weight: bold;
@@ -40,7 +65,7 @@
 }
 
 .btn-color:hover {
-    background: var(--gray);
+    background: var(--fondo-nav);
     color: var(--purple);
 }
 
@@ -48,12 +73,14 @@
 /* Acerca de nosotros */
 .btn-acordeon {
     font-weight: bold;
+    background-color: var(--fondo-nav);
+    border-color: #5f1f79;
 }
 .accordion {
     --bs-accordion-btn-focus-box-shadow: 0;
 }
 .accordion-button:not(.collapsed) {
-    background-color: var(--gray);
+    background: var(--boton);
 }
 
 .accordion-button:not(.collapsed) {
@@ -66,7 +93,8 @@
 /*Estilo de la sección Equipo*/
 .container {
     display: flex;
-    width: 50vw;
+    width: 50vw;    
+    margin-bottom: 4rem;
 }
 
 .panel {
@@ -80,7 +108,7 @@
     flex: 0.5;
     margin: 10px;
     position: relative;
-    transition: all 700ms ease-in;
+    transition: all 700ms ease-in; 
 }
 
 .panel h3 {
@@ -105,19 +133,107 @@
 
 /* Contacto */
 
-/*
-.form-contact {
-    width: 26rem;
-    padding: 0 20px;
-}*/
+.content{
+        max-width: 1170px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1.5em;
+        background-color: black;
+        color: var(--texto-claro);
+        border-radius: 5%;
+}
 
+.contacto{
+    text-align: center;
+    font-size: 3em;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--texto-claro);
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    ;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+    border-radius: 5%;
+}
+
+.contact-wrapper > * {
+    padding: 1em;
+}
+
+.contact-form {
+    
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.contact-form form label {
+    display: block;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form .block {
+    grid-column: 1 / 3;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: var(--texto-claro);
+    border-bottom: 1px solid var(--naranja-logo);
+}
+
+.contact-form form button {
+    background: var(--boton);
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: linear-gradient(90deg, rgba(150, 38, 162, 1) 0%, rgba(161, 24, 148, 1) 43%, rgba(255, 106, 0, 1) 100%);
+    color: #fff;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+/* CONTACT INFO */
+.contact-info {
+    background-color: #1f1d1d;
+    border-radius: 5%;
+}
+
+.contact-info h4, .contact-info ul, .contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
 /* Fin seccion contacto */
 
-/* MAIN */
-/* Hero */
+/* INICIO*/
+/* SECCION INICIO */
 .hero {
-    background-color: var(--gray);
     height: auto;
+    background-color: var(--fondo-nav);
 }
 
 .img-planes {
@@ -138,8 +254,23 @@
     .container {
         width: 70%;
     }
+}
 
-    .form-contact {
-        width: 75% !important;
+/* PANTALLA GRANDE SESION CONTACTANOS PARA QUE APAREZCA LADO A LADO*/
+@media(min-width: 700px) {
+    body {
+        padding: 0 4em;
+    }
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        text-align: left;
     }
 }

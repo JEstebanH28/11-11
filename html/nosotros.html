@@ -11,10 +11,11 @@
 </head>
 
 <body>
-  <header>
+  <!-- NAVBAR -->
+  <header class="navbar">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid px-5">
-        <a class="navbar-brand" href="#"><img src="../src/logo232.png" class="logo" alt="Logo 11"></a>
+        <a class="navbar-brand" href="../html/index.html"><img src="../src/logo.svg" class="logo" alt="Logo 11"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -22,13 +23,13 @@
         <div class="collapse navbar-collapse nav-container" id="navbarNav">
           <ul class="navbar-nav align-items-center">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              <a class="nav-link active" aria-current="page" href="../html/index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="nosotros.html">Nosotros</a>
+              <a class="nav-link" href="../html/nosotros.html">Nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Información</a>
+              <a class="nav-link" href="#contactanos">Contáctanos</a>
             </li>
             <li class="nav-item">
               <button class="btn-nav btn-color"><a class="nav-link" href="#">Empezar</a></button>
@@ -69,9 +70,7 @@
           <div class="accordion-body">
             <p>Crear y fortalecer comunidades derribando los obstáculos que actualmente impiden la socialización, dando
               un primer impulso ser un medio de conexión para que las personas se conozcan.
-              Esperamos abarcar a toda Hispano-América en el primer año con el lanzamiento de la plataforma en el idioma
-              español, el continente americano en 3 años con versiones en inglés y portugués, y atingir escala mundial
-              en 5 años con la oportunidad de adaptar la plataforma a cada idioma local.
+              Esperamos abarcar a toda Hispano-América en el primer año con el lanzamiento de la plataforma en el idioma español, el continente americano en 3 años con versiones en inglés y portugués, y atingir escala mundial en 5 años con la oportunidad de adaptar la plataforma a cada idioma local.
             </p>
           </div>
         </div>
@@ -102,40 +101,88 @@
     <div class="container">
       <div class="panel active" style="background-image: url('../src/augusto.jpg')">
         <h3>Augusto</h3>
+        <div class="contenido" style="display: none;">
+        <!--Contenido inicial Visible-->
+          <p>Texto sobre Augusto</p>
+        </div>
       </div>
       <div class="panel" style="background-image: url('../src/daniela.jpeg')">
         <h3>Daniela</h3>
+        <div class="contenido" style="display: none;">
+          <!--Contenido inicial Visible-->
+            <p>Texto sobre Daniela</p>
+          </div>
       </div>
       <div class="panel" style="background-image: url('../src/esteban.jpeg')">
         <h3>Esteban</h3>
+        <div class="contenido" style="display: none;">
+          <!--Contenido inicial Visible-->
+            <p>Texto sobre Esteban</p>
+          </div>
       </div>
       <div class="panel" style="background-image: url('../src/july.jpeg')">
         <h3>July</h3>
+        <div class="contenido" style="display: none;">
+          <!--Contenido inicial Visible-->
+            <p>Texto sobre July</p>
+          </div>
       </div>
     </div>
+
+    <!-- Contenedor de texto -->
+<div id="textoPersona" class="container" style="display: none;">
+  <p id="contenidoTexto"></p>
+</div>
   </section>
 
 
   <!-- FORMULARIO DE CONTACTO -->
-  <section>
-    <h2 class="text-center py-5">CONTACTANOS</h2>    
-    <!-- modify this form HTML and place wherever you want your form -->
-    <form id="fs-frm" name="contacto" accept-charset="utf-8" action="https://formspree.io/f/xyyrzael" method="post">
-        <fieldset id="fs-frm-inputs">
-          <label for="full-name">Nombre Completo</label>
-          <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
-          <label for="email-address">Email</label>
-          <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
-          <label for="telephone">Teléfono</label>
-          <input type="telephone" name="telephone" id="telephone" placeholder="(+57) 555-5555" required="">
-          <label for="complaint">Mensaje</label>
-          <textarea rows="6" name="mensaje" id="mensaje" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
-          <input type="hidden" name="_subject" id="email-subject" value="Complaint Form Submission">
-        </fieldset>
-        <input type="submit" value="Enviar">
-      </form>
+  <div id="contactanos" class="content">
 
-  </section>
+    <h2 class="contacto"><span>CONTÁCTANOS</span></h2>
+
+    <div class="contact-wrapper animated bounceInUp">
+        <div class="contact-form">
+            <form action="https://formspree.io/f/xyyrzael" method="post">
+                <p>
+                    <label>Nombre Completo</label>
+                    <input type="text" name="fullname">
+                </p>
+                <p>
+                    <label>Email</label>
+                    <input type="email" name="email">
+                </p>
+                <p>
+                    <label>Teléfono</label>
+                    <input type="tel" name="phone">
+                </p>
+                <p>
+                    <label>Asunto</label>
+                    <input type="text" name="affair">
+                </p>
+                <p class="block">
+                   <label>Mensaje</label> 
+                    <textarea name="message" rows="3"></textarea>
+                </p>
+                <p class="block">
+                    <button>
+                        Enviar
+                    </button>
+                </p>
+            </form>
+        </div>
+        <div class="contact-info">
+            <h4>Información Adicional</h4>
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i> Calle 85</li>
+                <li><i class="fas fa-phone"></i> +57 555 222 333</li>
+                <li><i class="fas fa-envelope-open-text"></i> contact1111@gmail.com</li>
+            </ul>            
+            <p>www.11-11.com</p>
+            <img src="../src/logo.svg" alt="">
+        </div>
+    </div>
+</div>
 
 
   <!-- Script de bootstrap -->
