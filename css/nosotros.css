@@ -17,7 +17,7 @@ body {
     color: black;
     line-height: 1.6;
     font-family: 'Quicksand', sans-serif;
-    padding: 0 1.5em;
+    padding: 0;
     margin-top: 4rem;
 }
 
@@ -29,8 +29,9 @@ body {
     width: 100%;
     z-index: 1;
     left: 0;
-    
+
 }
+
 .logo {
     width: 50px;
 }
@@ -38,6 +39,7 @@ body {
 .nav-color {
     background: var(--fondo-nav);
 }
+
 .nav-container {
     flex-grow: 0;
 }
@@ -46,10 +48,16 @@ body {
     gap: 20px;
 }
 
+.nav-container .text-nav:hover {
+    border-bottom: 2px solid var(--purple);
+    font-weight: bold;
+}
+
 .btn-nav {
     border-radius: 50px;
     width: 100px;
 }
+
 
 .btn-color {
     background: rgb(150, 38, 162);
@@ -65,8 +73,9 @@ body {
 }
 
 .btn-color:hover {
-    background: var(--fondo-nav);
-    color: var(--purple);
+    background: rgba(150, 38, 162, 0.53);
+    background: linear-gradient(90deg, rgba(150, 38, 162, 1) 0%, rgba(255, 106, 0, 1) 0%, rgba(161, 24, 148, 1) 64%);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -76,9 +85,11 @@ body {
     background-color: var(--fondo-nav);
     border-color: #5f1f79;
 }
+
 .accordion {
     --bs-accordion-btn-focus-box-shadow: 0;
 }
+
 .accordion-button:not(.collapsed) {
     background: var(--boton);
 }
@@ -93,7 +104,7 @@ body {
 /*Estilo de la sección Equipo*/
 .container {
     display: flex;
-    width: 50vw;    
+    width: 50vw;
     margin-bottom: 4rem;
 }
 
@@ -108,7 +119,7 @@ body {
     flex: 0.5;
     margin: 10px;
     position: relative;
-    transition: all 700ms ease-in; 
+    transition: all 700ms ease-in;
 }
 
 .panel h3 {
@@ -133,17 +144,17 @@ body {
 
 /* Contacto */
 
-.content{
-        max-width: 1170px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 1.5em;
-        background-color: black;
-        color: var(--texto-claro);
-        border-radius: 5%;
+.content {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    background-color: black;
+    color: var(--texto-claro);
+    border-radius: 5%;
 }
 
-.contacto{
+.contacto {
     text-align: center;
     font-size: 3em;
     margin-top: 1rem;
@@ -158,23 +169,22 @@ ul {
     list-style: none;
     padding: 0;
 }
+
 .contact-wrapper {
     box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
     border-radius: 5%;
 }
 
-.contact-wrapper > * {
+.contact-wrapper>* {
     padding: 1em;
 }
 
-.contact-form {
-    
-}
+.contact-form {}
 
 .contact-form form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
+
 }
 
 .contact-form form label {
@@ -223,10 +233,13 @@ ul {
     border-radius: 5%;
 }
 
-.contact-info h4, .contact-info ul, .contact-info p {
+.contact-info h4,
+.contact-info ul,
+.contact-info p {
     text-align: center;
     margin: 0 0 1rem 0;
 }
+
 /* Fin seccion contacto */
 
 /* INICIO*/
@@ -239,6 +252,7 @@ ul {
 .img-planes {
     padding: 20px;
 }
+
 .img-planes img {
     width: 300px;
     border-radius: 29% 71% 28% 72%/66% 21% 79% 34%;
@@ -258,16 +272,15 @@ ul {
 
 /* PANTALLA GRANDE SESION CONTACTANOS PARA QUE APAREZCA LADO A LADO*/
 @media(min-width: 700px) {
-    body {
-        padding: 0 4em;
-    }
     .contact-wrapper {
         display: grid;
         grid-template-columns: 2fr 1fr;
     }
-    .contact-wrapper > * {
+
+    .contact-wrapper>* {
         padding: 2em;
     }
+
     .contact-info h4,
     .contact-info ul,
     .contact-info p {
