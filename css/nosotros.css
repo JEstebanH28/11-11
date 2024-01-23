@@ -167,10 +167,6 @@ ul {
     padding: 1em;
 }
 
-.contact-form {
-    
-}
-
 .contact-form form {
     display: grid;
     grid-template-columns: 1fr 1fr;
