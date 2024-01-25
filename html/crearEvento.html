@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Evento</title>
+</head>
+<body>
+    <h1>Crear Evento</h1>
+
+  <form id="formulario-evento">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" required><br>
+
+    <label for="ciudad">Ciudad:</label>
+    <input type="text" id="ciudad" required><br>
+
+    <label for="lugar">Lugar:</label>
+    <input type="text" id="lugar" required><br>
+
+    <label for="costo">Cuanto cuesta por persona:</label>
+    <input type="number" id="costo" required><br>
+
+    <label for="tiempo">Fecha y hora:</label>
+    <input type="datetime-local" id="tiempo" required><br>
+
+    <label for="participantes"> No. de Participantes:</label>
+    <input type="number" id="participantes" required><br>
+
+    <label for="descripcion">Descripción:</label>
+   <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Ingresa una descripción del evento"></textarea>
+
+    <button type="button" onclick="crearEvento()">Crear Evento</button>
+  </form>
+
+  <ul id="listaEventos">    
+  </ul>
+
+  <script src="/JS/crearEvento.js"></script>
+</body>
+</html>
