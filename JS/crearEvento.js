@@ -22,11 +22,8 @@
             // Agregar el nuevo evento a la lista
             agregarEventoALista(nuevoEvento);
             
-            listaEventos.appendChild(listItem);       
+            listaEventos.appendChild(listItem); 
     }                
-    
-        // Hacer algo con el objeto JSON (por ejemplo, mostrarlo en la consola)
-        //console.log(JSON.stringify(nuevoEvento));
     
     function agregarEventoALista(evento) {
         // Obtener la referencia de la lista
