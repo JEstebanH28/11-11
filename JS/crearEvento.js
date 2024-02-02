@@ -7,8 +7,21 @@
         let tiempo = document.getElementById("tiempo").value;
         let participantes = parseInt(document.getElementById("participantes").value);
         let descripcion = document.getElementById("descripcion").value;
-     
-         // Crear objeto JSON
+        
+
+        // Obtener la fecha y hora actuales
+        let fechaActual = new Date();
+        let fechaEvento = new Date(tiempo);
+
+         // Verificar que los campos no estén vacíos
+        if (nombre === '' || ciudad === '' || lugar === '' || costo === '' || tiempo === '' || participantes === '' || descripcion === '') {
+        alert('Por favor, completa todos los campos.');
+        return;
+        } else if (fechaEvento < fechaActual) {
+            alert('La fecha y hora del evento deben ser futuras.');
+        return;
+        } else {
+            // Crear objeto JSON
          let nuevoEvento = {
             "nombre": nombre,
             "ciudad": ciudad,
@@ -22,7 +35,8 @@
             // Agregar el nuevo evento a la lista
             agregarEventoALista(nuevoEvento);
             
-            listaEventos.appendChild(listItem); 
+            listaEventos.appendChild(listItem);
+        } 
     }                
     
     function agregarEventoALista(evento) {
