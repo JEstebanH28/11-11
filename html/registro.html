@@ -29,6 +29,9 @@
                 <li class="nav-item">
                   <a class="nav-link" href="/html/nosotros.html#contactanos">Contáctanos</a>
                 </li>
+                <li class="nav-item text-nav">
+                  <a class="nav-link" href="../html/sugerencias.html">Sugerencias</a>
+              </li>
                 <li class="nav-item">
                   <button class="btn-nav btn-color"><a class="nav-link" href="/html/perfil.html">Mi Perfil</a></button>
                   
@@ -56,8 +59,8 @@
       <label for="password">Contraseña:</label><br>
       <input type="password" id="password" name="password"><br>
 
-      <label for="password">Confirmar Contraseña:</label><br>
-      <input type="password" id="password" name="password"><br>
+      <label for="confirmPassword">Confirmar Contraseña:</label><br>
+      <input type="password" id="confirmPassword" name="confirmPassword"><br>
 
       <label for="celular">Celular</label><br>
       <input type="phone" id="celular" name="celular"><br>
@@ -65,15 +68,17 @@
       <label for="email">Email:</label><br>
       <input type="email" id="email" name="email"><br>
 
-      <label for="email">Confirmar Email:</label><br>
-      <input type="email" id="email" name="email"><br>
+      <label for="confirmEmail">Confirmar Email:</label><br>
+      <input type="email" id="confirmEmail" name="confirmEmail"><br>
 
       <label for="ciudad">Ciudad:</label><br>
       <input type="text" id="ciudad" name="ciudad"><br>
 
   
-      <button class="btn-nav btn-color"><a class="nav-link" href="#">Registrarte</a></button>
+      <button class="btn-nav btn-color"><a class="nav-link" onclick="validarRegistro()" href="../html/Perfil.html">Registrarte</a></button>
 
       </form> 
+
+      <script src="../JS/registro.js"></script>
 </body>
 </html>
