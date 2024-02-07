@@ -23,9 +23,20 @@ function validarRegistro() {
       return;
       }else if(email !== confirmEmail || !regex.test(email)){
         alert("Los correos electrónicos no coinciden o no son válidos.");
+        return;
       } else {
+        // Obtener todos los usuarios existentes del Local Storage
+        let usuarios = JSON.parse(localStorage.getItem('usuarios')) || {};
+
+        // Verificar si el nombre de usuario ya existe
+        if (usuarios.hasOwnProperty(username)) {
+            alert('El nombre de usuario ya está en uso. Por favor, elige otro.');
+            return;
+        }
+
+
         // Crear un objeto JSON con los campos del usuario
-        let usuario = {
+        usuarios[username] = {
         nombre: nombre,
         nacimiento: nacimiento,
         username: username,
@@ -34,11 +45,12 @@ function validarRegistro() {
         email: email,
         ciudad: ciudad
       };
+
       // Almacenar el objeto JSON en el Local Storage
-        localStorage.setItem('usuario', JSON.stringify(usuario));
+        localStorage.setItem('usuarios', JSON.stringify(usuarios));
 
     // Redirigir o realizar otras acciones después del registro exitoso
-        alert('Registro exitoso. Redirigiendo a la página de perfil.');
-        window.location.href = '../html/Perfil.html';
+          window.location.href='Perfil.html';    
+          alert('Registro exitoso. Redirigiendo a la página de perfil.');        
       }
     }
