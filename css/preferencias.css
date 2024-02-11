@@ -16,11 +16,14 @@ h1 {
     text-align: center;
   }
   
-  button {
-    margin: 0 auto;
+  .card button {
+    margin: auto;
+    width: 100%;
+    padding: 8px;
   }
 
   .card img { 
     width: auto;
-    height: 12rem;
+    height: 180px;
+    border-radius: 10px;
   }
