@@ -14,7 +14,7 @@
 <body>
   <!-- NAVBAR -->
   <header class="navbar">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary nav-shadow">
       <div class="container-fluid px-5">
         <a class="navbar-brand" href="../html/index.html"><img src="../src/logo.svg" class="logo" alt="Logo 11"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -33,12 +33,15 @@
               <a class="nav-link" href="#contactanos">Contáctanos</a>
             </li>
             <li class="nav-item text-nav">
-              <a class="nav-link" href="../html/sugerencias.html">Sugerencias</a>
+              <a class="nav-link" href="../html/parches.html">Parches</a>
+            </li>
+            <li class="nav-item text-nav">
+              <a class="nav-link" href="../html/aliados.html">Aliados</a>
             </li>
             <li class="nav-item">
 
               <button class="btn-nav btn-color"><a class="nav-link" href="/html/eventosLista.html">Eventos
-                Activos</a></button>
+                  Activos</a></button>
             </li>
           </ul>
         </div>
@@ -49,7 +52,7 @@
   <h1>Mis preferencias</h1>
 
 
-    <!-- Cards con preferencias para personalizar cada perfil -->
+  <!-- Cards con preferencias para personalizar cada perfil -->
 
   <main>
     <div class="card-container">
@@ -58,89 +61,109 @@
       <div class="card">
         <img src="../src/Bolos.jpg" alt="Bolos">
         <h3>Jugar Bolos</h3>
-        <p>Quieres jugar Bolos, pero no tienes a tu grupo compelto?, invita a otros Onzers a completar tu equipo.</p> 
-        <button class="btn-nav btn-color" onclick="agregarPreferencia()"><a class="nav-link" href="#">Añadir Preferencia</a></button>
+        <p>Quieres jugar Bolos, pero no tienes a tu grupo compelto?, invita a otros Onzers a completar tu equipo.</p>
+        <button class="btn-nav btn-color" onclick="agregarPreferencia()"><a class="nav-link" href="#">Añadir
+            Preferencia</a></button>
       </div>
-    
+
       <div class="card">
         <img src="../src/cafe.jpg" alt="Café">
         <h3>Tomar un café y tertuliar</h3>
-        <p>DQue delicia tomar un café en una tarde hermosa y tertuliar sobre temas de interés común con otros Onzers.</p>
-        <button class="btn-nav btn-color" onclick="agregarPreferencia()"><a class="nav-link" href="#">Añadir Preferencia</a></button>
+        <p>DQue delicia tomar un café en una tarde hermosa y tertuliar sobre temas de interés común con otros Onzers.
+        </p>
+        <button class="btn-nav btn-color" onclick="agregarPreferencia()"><a class="nav-link" href="#">Añadir
+            Preferencia</a></button>
       </div>
-    
+
       <div class="card">
         <img src="../src/Caminata.jpg" alt="Caminata">
         <h3>Hacer una Caminata</h3>
-        <p>Eres amante de la naturaleza y el bienestar físisco? invita a otros Onzers a descubrir hermosos lugares caminando.</p>
-        <button class="btn-nav btn-color" onclick="agregarPreferencia()"><a class="nav-link" href="#">Añadir Preferencia</a></button>
+        <p>Eres amante de la naturaleza y el bienestar físisco? invita a otros Onzers a descubrir hermosos lugares
+          caminando.</p>
+        <button class="btn-nav btn-color" onclick="agregarPreferencia()"><a class="nav-link" href="#">Añadir
+            Preferencia</a></button>
       </div>
-      
+
       <div class="card">
-        <img src="../src/restauranteReunion.jpg" alt="Salir a Comer"> 
+        <img src="../src/restauranteReunion.jpg" alt="Salir a Comer">
         <h3>Probar nuevos Restaurantes</h3>
         <p>Hay un nuevo restaurante en tu ciudad, es muy famoso pero no quisieras ir a conocerlo sol@?.</p>
-        <button class="btn-nav btn-color" onclick="agregarPreferencia()"><a class="nav-link" href="#">Añadir Preferencia</a></button>
-      </div>
-      
-      <div class="card">
-        <img src="../src/futbol.jpg" alt="futbol"> 
-        <h3>Jugar Futbol</h3>
-        <p>Que tal un buen partido de futbol para desestresarte y ejercitarte? puedes armar los equipos invitando a otros Onzers.</p>
-        <button class="btn-nav btn-color" onclick="agregarPreferencia()"><a class="nav-link" href="#">Añadir Preferencia</a></button>
+        <button class="btn-nav btn-color" onclick="agregarPreferencia()"><a class="nav-link" href="#">Añadir
+            Preferencia</a></button>
       </div>
 
       <div class="card">
-        <img src="../src/parque-diversiones.jpg" alt="Parques de Diversiones"> 
+        <img src="../src/futbol.jpg" alt="futbol">
+        <h3>Jugar Futbol</h3>
+        <p>Que tal un buen partido de futbol para desestresarte y ejercitarte? puedes armar los equipos invitando a
+          otros Onzers.</p>
+        <button class="btn-nav btn-color" onclick="agregarPreferencia()"><a class="nav-link" href="#">Añadir
+            Preferencia</a></button>
+      </div>
+
+      <div class="card">
+        <img src="../src/parque-diversiones.jpg" alt="Parques de Diversiones">
         <h3>Parques de Diversiones</h3>
         <p>Te gusta divertirte en parques llenos de atracciones mecánicas, con experiencias extremas.</p>
-        <button class="btn-nav btn-color" onclick="agregarPreferencia()"><a class="nav-link" href="#">Añadir Preferencia</a></button>
+        <button class="btn-nav btn-color" onclick="agregarPreferencia()"><a class="nav-link" href="#">Añadir
+            Preferencia</a></button>
       </div>
 
       <div class="card">
-        <img src="../src/ciclovia.jpg" alt="Ciclovía"> 
+        <img src="../src/ciclovia.jpg" alt="Ciclovía">
         <h3>Ciclovía</h3>
-        <p>Llevar una vida saludable saliendo a montar en tu bicicleta en compañia de otros Onzers es el plan perfecto para salir de la rutina.</p>
-        <button class="btn-nav btn-color" onclick="agregarPreferencia()"><a class="nav-link" href="#">Añadir Preferencia</a></button>
+        <p>Llevar una vida saludable saliendo a montar en tu bicicleta en compañia de otros Onzers es el plan perfecto
+          para salir de la rutina.</p>
+        <button class="btn-nav btn-color" onclick="agregarPreferencia()"><a class="nav-link" href="#">Añadir
+            Preferencia</a></button>
       </div>
 
       <div class="card">
-        <img src="../src/rumba.jpg" alt="Rumba"> 
+        <img src="../src/rumba.jpg" alt="Rumba">
         <h3>Vamos de Rumba</h3>
-        <p>¿Quisieras conocer ese nuevo sitio de Rumba de tu ciudad? invita a otros Onzers para pasar una noche increible</p>
-        <button class="btn-nav btn-color" onclick="agregarPreferencia()"><a class="nav-link" href="#">Añadir Preferencia</a></button>
+        <p>¿Quisieras conocer ese nuevo sitio de Rumba de tu ciudad? invita a otros Onzers para pasar una noche
+          increible</p>
+        <button class="btn-nav btn-color" onclick="agregarPreferencia()"><a class="nav-link" href="#">Añadir
+            Preferencia</a></button>
       </div>
 
       <div class="card">
-        <img src="../src/cine.jpg" alt="Cine"> 
+        <img src="../src/cine.jpg" alt="Cine">
         <h3>Vamos a Cine</h3>
-        <p>Cada semana llegan nueva pelis a la pantalla gigante, puedes invitar a otros Onzers a compartir contigo un rato de cine.</p>
-        <button class="btn-nav btn-color" onclick="agregarPreferencia()"><a class="nav-link" href="#">Añadir Preferencia</a></button>
+        <p>Cada semana llegan nueva pelis a la pantalla gigante, puedes invitar a otros Onzers a compartir contigo un
+          rato de cine.</p>
+        <button class="btn-nav btn-color" onclick="agregarPreferencia()"><a class="nav-link" href="#">Añadir
+            Preferencia</a></button>
       </div>
 
       <div class="card">
-        <img src="../src/karaoke.jpg" alt="Karaoke"> 
+        <img src="../src/karaoke.jpg" alt="Karaoke">
         <h3>Vamos a Cantar</h3>
-        <p>Cuando quieras descrestar con tu melodiosa voz, puedes juntarte con otros Onzers para disfrutar de cantantes unicos.</p>
-        <button class="btn-nav btn-color" onclick="agregarPreferencia()"><a class="nav-link" href="#">Añadir Preferencia</a></button>
+        <p>Cuando quieras descrestar con tu melodiosa voz, puedes juntarte con otros Onzers para disfrutar de cantantes
+          unicos.</p>
+        <button class="btn-nav btn-color" onclick="agregarPreferencia()"><a class="nav-link" href="#">Añadir
+            Preferencia</a></button>
       </div>
 
       <div class="card">
-        <img src="../src/pesca.jpg" alt="Pesca"> 
+        <img src="../src/pesca.jpg" alt="Pesca">
         <h3>Viaje de Pesca</h3>
-        <p>Si lo tuyo es la tranquilidad y la paciencia, organiza un tranquilo día de pesca con otros Onzers a las afueras de tu ciudad.</p>
-        <button class="btn-nav btn-color" onclick="agregarPreferencia()"><a class="nav-link" href="#">Añadir Preferencia</a></button>
+        <p>Si lo tuyo es la tranquilidad y la paciencia, organiza un tranquilo día de pesca con otros Onzers a las
+          afueras de tu ciudad.</p>
+        <button class="btn-nav btn-color" onclick="agregarPreferencia()"><a class="nav-link" href="#">Añadir
+            Preferencia</a></button>
       </div>
 
       <div class="card">
-        <img src="../src/cabalgata.jpg" alt="Cabalgata"> 
+        <img src="../src/cabalgata.jpg" alt="Cabalgata">
         <h3>Cabalgata Responsable</h3>
         <p>Si amas a los equinos y disfrutas de un paseo cabalgando, puedes unirte con otros Onzers para pasear.</p>
-        <button class="btn-nav btn-color" onclick="agregarPreferencia()"><a class="nav-link" href="#">Añadir Preferencia</a></button>
+        <button class="btn-nav btn-color" onclick="agregarPreferencia()"><a class="nav-link" href="#">Añadir
+            Preferencia</a></button>
       </div>
 
     </div>
-</main>
+  </main>
 </body>
 
 </html>

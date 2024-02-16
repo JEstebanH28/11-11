@@ -26,7 +26,7 @@ const viewPlaces = (data) => {
             /*html*/`
             <article>
                 <div class="image-container">
-                    <img src="${lugar.images}" alt="">
+                    <img src="${lugar.images}" alt="Imagen no disponible" onerror="this.onerror=null;this.src='../src/Caminata.jpg';">
                 </div>
                 <h2>${lugar.name}</h2>
                 <h4>Ciudad: <span>${lugar.city.name}</span></h4>
@@ -34,7 +34,7 @@ const viewPlaces = (data) => {
                     <p class="short-description">${lugar.description.substring(0, 200)}...</p>
                     <p class="full-description" style="display:none;">${lugar.description}</p>
                 </div>
-                <button class="ver-mas-btn" onclick="expandirDescripcion(this)">Ver más</button>
+                <button class="ver-mas-btn btn-color" onclick="expandirDescripcion(this)">Ver más</button>
             </article>
             `);
 
@@ -48,7 +48,7 @@ const showHideCards = () => {
     const articles = document.querySelectorAll(".cards-places article");
     articles.forEach((article, index) => {
         if (index < visibleCards) {
-            article.style.display = 'block';
+            article.style.display = 'flex';
         } else {
             article.style.display = 'none';
         }

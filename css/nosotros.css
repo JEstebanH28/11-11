@@ -29,7 +29,10 @@ body {
     width: 100%;
     z-index: 10;
     left: 0;
+}
 
+.nav-shadow {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.119);
 }
 
 .logo {
@@ -54,7 +57,7 @@ body {
 }
 
 .btn-nav {
-    border-radius: 15px;
+    border-radius: 20px;
     width: 100%;
 }
 
@@ -74,7 +77,7 @@ body {
 
 .btn-color:hover {
     background: rgba(150, 38, 162, 0.53);
-    background: linear-gradient(90deg, rgba(150, 38, 162, 1) 0%, rgba(255, 106, 0, 1) 0%, rgba(161, 24, 148, 1) 64%);
+    background: linear-gradient(90deg, rgba(205, 155, 210, 0.382) 0%, rgba(255, 106, 0, 1) 0%, rgba(161, 24, 148, 1) 64%);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -238,6 +241,45 @@ ul {
     margin: 0 0 1rem 0;
 }
 
+.registro-tipo {
+    padding: 1rem;
+}
+
+.registro-tipo input[type="radio"] {
+    display: none;
+}
+
+.registro-tipo label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+/* Estilos para el círculo que representa el botón de radio seleccionado */
+.registro-tipo label::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    /* Tamaño del círculo */
+    height: 20px;
+    /* Tamaño del círculo */
+    border-radius: 50%;
+    /* Hace que el círculo sea redondeado */
+    border: 2px solid var(--purple-light);
+    /* Color del borde del círculo */
+    background-color: white;
+    /* Color de fondo del círculo */
+    position: absolute;
+    left: 0;
+    top: 1px;
+    /* Ajusta la posición vertical del círculo */
+}
+
+.registro-tipo input[type="radio"]:checked+label::before {
+    background-color: var(--purple);
+    /* Cambia el color de fondo del círculo cuando está seleccionado */
+}
+
 /* Fin seccion contacto */
 
 /* INICIO*/
@@ -245,6 +287,11 @@ ul {
 .hero {
     height: auto;
     background-color: var(--fondo-nav);
+}
+
+.hero button {
+    padding: 10px 35px;
+    font-size: 1.3em;
 }
 
 .img-planes {

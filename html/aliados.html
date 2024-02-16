@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/nosotros.css">
+    <link rel="stylesheet" href="../css/sugerencias.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary nav-color nav-shadow">
+            <div class="container-fluid px-5">
+                <a class="navbar-brand" href="../html/index.html"><img src="../src/logo.svg" class="logo"
+                        alt="Logo 11"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse nav-container" id="navbarNav">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item text-nav">
+                            <a class="nav-link active" aria-current="page" href="../html/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item text-nav">
+                            <a class="nav-link" href="../html/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item text-nav">
+                            <a class="nav-link" href="../html/nosotros.html#contactanos">Contáctanos</a>
+                        </li>
+                        <li class="nav-item text-nav">
+                            <a class="nav-link" href="../html/parches.html">Parches</a>
+                        </li>
+                        <li class="nav-item text-nav">
+                            <a class="nav-link" href="../html/aliados.html">Aliados</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn-nav btn-color" type="submit"><a class="nav-link"
+                                    href="../html/iniciarSesion.html#iniciarSesion">Empezar</a></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="row g-0 sugerencias">
+            <div class="col-lg-6 descripcion-sugerencias gap-3">
+                <h3>¿Deseas que tu negocio forme parte de la comunidad?</h3>
+                <div class="contenido-descripcion">
+                    <p>
+                        ¿Posees un establecimiento único? Únete a nosotros como socio y promociona tu restaurante,
+                        bolera,
+                        cancha u otros lugares idóneos para encuentros. Al unirte, no solo aumentarás la visibilidad de
+                        tu
+                        negocio, sino que también facilitarás la conexión entre personas con intereses similares.
+                    </p>
+                    <p>
+                        ¡Regístrate hoy como socio y forma parte de una red que une personas, lugares y experiencias
+                        excepcionales! Haz que cada plan sea una aventura inolvidable. 🌟🍽️🎳
+                    </p>
+                </div>
+                <button class="btn-color"><a href="nosotros.html#contactanos">Quiero unirme</a></button>
+            </div>
+            <img class="col-lg-6" src="../src/restauranteVacio.jpg" alt="">
+        </section>
+        <section id="lugares" class="cards-section">
+            <section class="encabezado-lugares">
+                <h4>Algunos establecimientos recomendados</h4>
+                <p>Estos son algunos lugares generales que recomendamos a nuestros usuarios</p>
+                <p>
+                    Cuando el usuario esta registrado, la página sugiere lugares para ir, y crear evento según la ciudad ingresada.
+                </p>
+            </section>
+            <div class="cards-business">
+                <article>
+                    <div class="image-container">
+                        <img src="../src/elChato.jpeg" alt="Restaurante El Chato">
+                    </div>
+                    <h2>Restaurante el Chato</h2>
+                    <h4>Ciudad: <span>Bogotá</span></h4>
+                    <div class="description-container">
+                        <p class="short-description"></p>
+                        <p class="full-description" style="display:none;">
+                            Sumérgete en una experiencia culinaria inigualable en El Chato, el aclamado restaurante del chef Álvaro Clavijo. Con su reciente reconocimiento como el número 33 en la lista mundial y el segundo en América Latina, El Chato promete ofrecerte un viaje gastronómico incomparable.
+                        </p>
+                    </div>
+                    <button class="ver-mas-btn btn-color" onclick="expandirDescripcion(this)">Ver más</button>
+                </article>
+
+                <article>
+                    <div class="image-container">
+                        <img src="../src/salvoPatria.jpg" alt="Restaurante Salvo Patria">
+                    </div>
+                    <h2>Restaurante Salvo Patria</h2>
+                    <h4>Ciudad: <span>Bogotá</span></h4>
+                    <div class="description-container">
+                        <p class="short-description"></p>
+                        <p class="full-description" style="display:none;">
+                            Descubre el encanto de Salvo Patria, un emblemático restaurante que desde su inicio en 2013 ha sido un pionero en la promoción de la cultura del café y la exploración de los productos locales en Bogotá.
+                        </p>
+                    </div>
+                    <button class="ver-mas-btn btn-color" onclick="expandirDescripcion(this)">Ver más</button>
+                </article>
+                <article>
+                    <div class="image-container">
+                        <img src="../src/salsa-experience-cena.jpg" alt="Restaurante Salsa Experience">
+                    </div>
+                    <h2>Salsa Experience Cena Show</h2>
+                    <h4>Ciudad: <span>Cali</span></h4>
+                    <div class="description-container">
+                        <p class="short-description"></p>
+                        <p class="full-description" style="display:none;">
+                            Déjate cautivar por la energía y el talento de los bailarines mientras disfrutas de una excelente cena. No te pierdas la oportunidad de vivir esta experiencia única todos los jueves en Tropica Hostel. ¡Prepárate para una noche llena de ritmo y diversión!
+                        </p>
+                    </div>
+                    <button class="ver-mas-btn btn-color" onclick="expandirDescripcion(this)">Ver más</button>
+                </article>
+
+
+            </div>
+            <button id="verMasBtn" class="ver-mas-btn btn-color">Mostrar más lugares</button>
+        </section>
+    </main>
+
+    <!-- Script de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <!-- Script propio -->
+    <script src="../JS/sugerencias.js"></script>
+</body>
+
+</html>

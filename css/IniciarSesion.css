@@ -15,17 +15,18 @@ body{
 }
 
 .container{
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: 400px;
-    margin-top: 110px;
+    margin-top: 140px;
     column-gap: 10px;
     justify-items: center;
     align-items: center;
     
 
 }
-.logo{
+.logoLogin{
     text-align: center;
 }
 

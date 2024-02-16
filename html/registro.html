@@ -1,87 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/nosotros.css">
     <link rel="stylesheet" href="../css/registro.css">
 </head>
-  <body>
-    <!-- NAVBAR -->
-    <header class="navbar">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid px-5">
-            <a class="navbar-brand" href="../html/index.html"><img src="../src/logo.svg" class="logo" alt="Logo 11"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse nav-container" id="navbarNav">
-              <ul class="navbar-nav align-items-center">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="../html/index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../html/nosotros.html">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/html/nosotros.html#contactanos">Contáctanos</a>
-                </li>
-                <li class="nav-item text-nav">
-                  <a class="nav-link" href="../html/sugerencias.html">Sugerencias</a>
-              </li>
-                <li class="nav-item">
-                  <button class="btn-nav btn-color"><a class="nav-link" href="/html/perfil.html">Mi Perfil</a></button>
-                  
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
 
-    <h1 id="h1">Bienvenido</h1>
-    <h2 id="h2">Realiza tu Registro</h2>
-    <h4 id="h4">Todos los campos son obligatorios para crear tu perfil</h4>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary nav-shadow">
+      <div class="container-fluid px-5">
+        <a class="navbar-brand" href="../html/index.html"><img src="../src/logo.svg" class="logo" alt="Logo 11"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse nav-container" id="navbarNav">
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../html/index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/nosotros.html#contactanos">Contáctanos</a>
+            </li>
+            <li class="nav-item text-nav">
+              <a class="nav-link" href="../html/parches.html">Parches</a>
+            </li>
+            <li class="nav-item text-nav">
+              <a class="nav-link" href="../html/aliados.html">Aliados</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn-nav btn-color"><a class="nav-link" href="/html/perfil.html">Mi Perfil</a></button>
 
-    <div class="container-form">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-      <form id="formulario-evento">
+  <h1 id="h1">Bienvenido</h1>
+  <h2 id="h2">Realiza tu Registro</h2>
+  <h4 id="h4">Todos los campos son obligatorios para crear tu perfil</h4>
 
-    
-        <input id="field-1" class="fields" placeholder="Nombre y Apellidos" type="text" id="nombre" name="nombre"><br>
+  <div class="container-form">
 
-        
-        <input class="tiempo" class="fields" placeholder="Nombre y Apellidos" type="date" id="nacimiento" name="nacimiento"><br>
-
-        
-        <input class="fields" placeholder="Usuario" type="text" id="username" name="username"><br>
-    
-        
-        <input class="fields" placeholder="Contraseña" type="password" id="password" name="password"><br>
-
-        
-        <input class="fields" placeholder="Confirmar Contraseña" type="password" id="confirmPassword" name="confirmPassword"><br>
-
-        
-        <input class="fields" placeholder="Celular" type="phone" id="celular" name="celular"><br>
-
-        
-        <input class="fields" placeholder="Email" type="email" id="email" name="email"><br>
+    <form id="formulario-evento">
 
 
-        
-        <input class="fields" placeholder="Confirmar Email" type="email" id="confirmEmail" name="confirmEmail"><br>
-        
-        <input class="fields" placeholder="Ciudad" type="text" id="ciudad" name="ciudad"><br>
+      <input id="nombre" class="fields" placeholder="Nombre y Apellidos" type="text" name="nombre"><br>
 
-    
-        <button id="button" class="btn-nav btn-color"><a class="nav-link" onclick="validarRegistro()" href="../html/Perfil.html">Registrarte</a></button>
 
-      </form> 
-    </div>  
-      <script src="../JS/registro.js"></script>
-  </body>
+      <input class="tiempo" class="fields" placeholder="Fecha nacimiento" type="date" id="nacimiento"
+        name="nacimiento"><br>
+
+
+      <input class="fields" placeholder="Usuario" type="text" id="username" name="username"><br>
+
+
+      <input class="fields" placeholder="Contraseña" type="password" id="password" name="password"><br>
+
+
+      <input class="fields" placeholder="Confirmar Contraseña" type="password" id="confirmPassword"
+        name="confirmPassword"><br>
+
+
+      <input class="fields" placeholder="Celular" type="phone" id="celular" name="celular"><br>
+
+
+      <input class="fields" placeholder="Email" type="email" id="email" name="email"><br>
+
+
+
+      <input class="fields" placeholder="Confirmar Email" type="email" id="confirmEmail" name="confirmEmail"><br>
+
+      <input class="fields" placeholder="Ciudad" type="text" id="ciudad" name="ciudad"><br>
+
+      <button id="button" class="btn-nav btn-color"><a class="nav-link" onclick="validarRegistro()"
+          href="../html/Perfil.html">Registrarte</a></button>
+
+    </form>
+  </div>
+  <script src="../JS/registro.js"></script>
+</body>
+
 </html>
