@@ -56,6 +56,12 @@ body {
     font-weight: bold;
 }
 
+.nav-link.active {
+    border-bottom: 2px solid var(--purple);
+    font-weight: bold;
+}
+
+
 .btn-nav {
     border-radius: 20px;
     width: 100%;

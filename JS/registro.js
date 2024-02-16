@@ -51,6 +51,6 @@ function validarRegistro() {
 
     // Redirigir o realizar otras acciones después del registro exitoso
           window.location.href=('iniciarSesion.html');    
-          alert('Registro exitoso. Redirigiendo a la página de perfil.');        
+          alert('Registro exitoso! Por favor inicia sesión.');        
       }
     }
