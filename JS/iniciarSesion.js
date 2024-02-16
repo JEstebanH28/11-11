@@ -8,7 +8,7 @@
     // Verificar si el usuario existe en el Local Storage
     if (usuarios.hasOwnProperty(username) && usuarios[username].password === password) {
         // Si el usuario y la contraseña coinciden, redirigir a la página de perfil
-        window.location.assign('Perfil.html');
+        window.location.assign('preferencias.html');
         alert('Inicio de sesión exitoso.'); 
     } else {
         // Si el usuario y la contraseña no coinciden o el usuario no existe, mostrar un mensaje de error

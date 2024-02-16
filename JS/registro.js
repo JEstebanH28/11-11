@@ -50,7 +50,7 @@ function validarRegistro() {
         localStorage.setItem('usuarios', JSON.stringify(usuarios));
 
     // Redirigir o realizar otras acciones después del registro exitoso
-          window.location.href='Perfil.html';    
+          window.location.href=('iniciarSesion.html');    
           alert('Registro exitoso. Redirigiendo a la página de perfil.');        
       }
     }
