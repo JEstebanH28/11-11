@@ -13,7 +13,7 @@
 <body>
   <!-- NAVBAR -->
   <header class="navbar">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary nav-color nav-shadow">
       <div class="container-fluid px-5">
         <a class="navbar-brand" href="../html/index.html"><img src="../src/logo.svg" class="logo" alt="Logo 11"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -29,15 +29,17 @@
               <a class="nav-link" href="../html/nosotros.html">Nosotros</a>
             </li>
             <li class="nav-item text-nav">
-              <a class="nav-link" href="#contactanos">Contáctanos</a>
+              <a class="nav-link" href="../html/nosotros.html#contactanos">Contáctanos</a>
             </li>
             <li class="nav-item text-nav">
-              <a class="nav-link" href="../html/sugerencias.html">Sugerencias</a>
+              <a class="nav-link" href="../html/parches.html">Parches</a>
+            </li>
+            <li class="nav-item text-nav">
+              <a class="nav-link" href="../html/aliados.html">Aliados</a>
             </li>
             <li class="nav-item">
-              <button class="btn-nav btn-color"><a class="nav-link"
+              <button class="btn-nav btn-color" type="submit"><a class="nav-link"
                   href="../html/iniciarSesion.html#iniciarSesion">Empezar</a></button>
-
             </li>
           </ul>
         </div>
@@ -170,6 +172,16 @@
             <label>Mensaje</label>
             <textarea name="message" rows="3"></textarea>
           </p>
+          <div class="registro-tipo d-flex flex-column align-items-start">
+            <div class="d-flex align-items-center justify-content-center">
+              <input type="radio" id="usuario" name="tipoRegistro" value="usuario" checked>
+              <label for="usuario">Usuario</label><br>
+            </div>
+            <div class="d-flex align-items-center">
+              <input type="radio" id="socio" name="tipoRegistro" value="socio">
+              <label for="socio">Socio</label><br>
+            </div>
+          </div>
           <p class="block">
             <button>
               Enviar
