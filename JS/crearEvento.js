@@ -43,20 +43,19 @@
         // Obtener la referencia de la lista
         let listaEventos = document.getElementById("listaEventos");
     
-        // Crear un nuevo elemento de lista para el evento
-        let listItem = document.createElement("li");
-        listItem.innerHTML = `
-        <strong>${evento.nombre}</strong><br>
-        Ciudad: ${evento.ciudad}<br>
-        Lugar: ${evento.lugar}<br>
-        Costo: $${evento.costo}<br>
-        Tiempo: ${new Date(evento.tiempo).toLocaleString()}<br>
-        Participantes: ${evento.participantes}<br>
-        Descripción: ${evento.descripcion}
-        `;
-    
-        // Agregar el elemento a la lista
-        listaEventos.appendChild(listItem);
+        let card = document.createElement("div");
+        card.classList.add("card");
+
+        card.innerHTML = `
+                <strong>${evento.nombre}</strong><br>
+                <p>Ciudad: ${evento.ciudad}</p>
+                <p>Lugar: ${evento.lugar}</p>
+                <p>Costo: $${evento.costo}</p>
+                <p>Tiempo: ${new Date(evento.tiempo).toLocaleString()}</p>
+                <p>Participantes: ${evento.participantes}</p>
+                <p>Descripción: ${evento.descripcion}</p>
+            `;
+            listaEventos.appendChild(card);
     }
     
     

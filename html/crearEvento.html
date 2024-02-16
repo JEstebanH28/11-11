@@ -1,84 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crear Evento</title>
-    <link rel="stylesheet" href="../css/crearEvento.css">    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-</head>
-  <body body>
 
-    <header class="navbar">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary nav-color nav-shadow">
-          <div class="container-fluid px-5">
-              <a class="navbar-brand" href="../html/index.html"><img src="../src/logo.svg" class="logo"
-                      alt="Logo 11"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse nav-container" id="navbarNav">
-                  <ul class="navbar-nav align-items-center">
-                      <li class="nav-item text-nav">
-                          <a class="nav-link active" aria-current="page" href="../html/index.html">Inicio</a>
-                      </li>
-                      <li class="nav-item text-nav">
-                          <a class="nav-link" href="../html/nosotros.html">Nosotros</a>
-                      </li>
-                      <li class="nav-item text-nav">
-                          <a class="nav-link" href="../html/nosotros.html#contactanos">Contáctanos</a>
-                      </li>
-                      <li class="nav-item text-nav">
-                          <a class="nav-link" href="../html/parches.html">Parches</a>
-                      </li>
-                      <li class="nav-item text-nav">
-                          <a class="nav-link" href="../html/aliados.html">Aliados</a>
-                      </li>
-                      <li class="nav-item">
-                          <button class="btn-nav btn-color" type="submit"><a class="nav-link"
-                                  href="../html/iniciarSesion.html#iniciarSesion">Empezar</a></button>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-      </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear Evento</title>
+  <link rel="stylesheet" href="../css/crearEvento.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/nosotros.css">
+</head>
+
+<body body>
+
+  <header class="navbar">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary nav-color nav-shadow">
+      <div class="container-fluid px-5">
+        <a class="navbar-brand" href="../html/index.html"><img src="../src/logo.svg" class="logo" alt="Logo 11"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse nav-container" id="navbarNav">
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item text-nav">
+              <a class="nav-link active" aria-current="page" href="../html/index.html">Inicio</a>
+            </li>
+            <li class="nav-item text-nav">
+              <a class="nav-link" href="../html/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item text-nav">
+              <a class="nav-link" href="../html/nosotros.html#contactanos">Contáctanos</a>
+            </li>
+            <li class="nav-item text-nav">
+              <a class="nav-link" href="../html/parches.html">Parches</a>
+            </li>
+            <li class="nav-item text-nav">
+              <a class="nav-link" href="../html/aliados.html">Aliados</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn-nav btn-color" type="submit"><a class="nav-link"
+                  href="../html/iniciarSesion.html#iniciarSesion">Empezar</a></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
 
-    <h1 id="h1">Crear Evento</h1>
+  <h1 id="h1">Crear Evento</h1>
 
-    <div class="container-form">
+  <div class="container-form">
 
-      <form id="formulario-evento">
-        
-        <input id="nombre" class="fields" placeholder="Nombre" type="text" required><br>
+    <form id="formulario-evento">
 
-        
-        <input class="fields" placeholder="Ciudad" id="ciudad" required><br>
+      <input id="nombre" class="fields" placeholder="Nombre" type="text" required><br>
 
-        
-        <input class="fields" placeholder="Lugar" type="text" id="lugar" required><br>
 
-        
-        <input class="fields" placeholder="Costo por persona " type="number" id="costo" required><br>
+      <input class="fields" placeholder="Ciudad" id="ciudad" required><br>
 
-        
-        <input class="tiempo" type="datetime-local" id="tiempo" required><br>
 
-        
-        <input class="fields" placeholder="Numero de participantes" id="participantes" required><br>
+      <input class="fields" placeholder="Lugar" type="text" id="lugar" required><br>
 
-        
-        <textarea class="textarea" name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Descripción del evento"></textarea>
 
-        <button class="button" type="button" onclick="crearEvento()">Crear Evento</button>
-      </form>
-    </div>
+      <input class="fields" placeholder="Costo por persona " type="number" id="costo" required><br>
 
-    <ul id="listaEventos">    
-    </ul>
 
-    <script src="/JS/crearEvento.js"></script>
-  </body>
+      <input class="tiempo" type="datetime-local" id="tiempo" required><br>
+
+
+      <input class="fields" placeholder="Numero de participantes" id="participantes" required><br>
+
+
+      <textarea class="textarea" name="descripcion" id="descripcion" cols="30" rows="10"
+        placeholder="Descripción del evento"></textarea>
+
+      <button class="button" type="button" onclick="crearEvento()">Crear Evento</button>
+    </form>
+  </div>
+
+  <div id="listaEventos"></div>
+
+  <script src="/JS/crearEvento.js"></script>
+</body>
+
 </html>
