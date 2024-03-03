@@ -4,7 +4,7 @@ const inputs = document.querySelectorAll("#formulario-evento input");
 
 const expresiones = {
   usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
-  nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
+  nombre: /^[a-zA-ZÀ-ÿ\s]{2,40}$/, // Letras y espacios, pueden llevar acentos.
   password: /^.{4,12}$/, // 4 a 12 digitos.
   correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
   telefono: /^\d{7,14}$/ // 7 a 14 numeros.
@@ -77,6 +77,16 @@ const validarFormulario = (e) => {
 }
 
 const validarCampo = (expresion, input, campo) => {
+  if (input.value.trim() === '') {
+    // Si el campo de contraseña está vacío, mostrar un error
+    document.getElementById(`grupo-${campo}`).classList.add("form-grupo-incorrecto");
+    document.getElementById(`grupo-${campo}`).classList.remove("form-grupo-correcto");
+    document.querySelector(`#grupo-${campo} i`).classList.add("fa-circle-xmark");
+    document.querySelector(`#grupo-${campo} i`).classList.remove("fa-circle-check");
+    document.querySelector(`#grupo-${campo} .form-input-error`).innerHTML = "Ningún campo puede estar vacío";
+    campos[campo] = false;
+  }
+
   if (expresion.test(input.value)) {
     document.getElementById(`grupo-${campo}`).classList.remove("form-grupo-incorrecto");
     document.getElementById(`grupo-${campo}`).classList.add("form-grupo-correcto");
