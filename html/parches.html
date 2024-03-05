@@ -61,7 +61,102 @@
                 </div>
                 <button class="btn-color"><a href="#lugares">Ver recomendaciones</a></button>
         </section>
-        <section id="lugares" class="cards-section">
+        <section id="lugares" class="row justify-content-center align-items-center descripcion-parches">
+            <div class="col-10">
+                <h4 class="card-title text-center py-3">Recomendaciones</h4>
+                <p class="card-text">Nuestra página ofrece una variedad de recomendaciones para inspirarte a crear
+                    eventos adaptados a tus intereses. Por un lado, presentamos eventos previamente organizados que
+                    han tenido un gran éxito, brindándote ideas y ejemplos para tus propias reuniones. </p>
+
+                <p class="card-text"> Por otro lado, también destacamos lugares turísticos en tu ciudad,
+                    ofreciéndote la oportunidad de organizar eventos en estos lugares icónicos.</p>
+
+                <p class="card-text"> Esto te permite elegir entre eventos en lugares reconocidos, como restaurantes
+                    populares, o aventuras en destinos turísticos, como una excursión a Guatapé.</p>
+            </div>
+            <div class="d-flex align-items-center justify-content-center gap-4 flex-wrap">
+                <button class="btn btn-color"><a href="#eventos">Eventos creados</a></button>
+                <button class="btn btn-color"><a href="#cards-lugares">Lugares generales</a></button>
+            </div>
+        </section>
+
+        <section class="d-flex flex-column align-items-center gap-3 py-5">
+            <h3  id="eventos" class="text-center">Eventos de usuarios</h3>
+            <section class="carrusel-eventos">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../src/Bolos.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h5>Evento: Bolos</h5>
+                                <p>Ciudad: Bogotá</p>
+                                <p>Personas: 14</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../src/cabalgata.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h5>Evento: Cabalgata</h5>
+                                <p>Ciudad: Quimbaya</p>
+                                <p>Personas: 8</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../src/cafe.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h5>Evento: Nuevo lugar de cafecito</h5>
+                                <p>Ciudad: Cartagena</p>
+                                <p>Personas: 6</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../src/ciclovia.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h5>Evento: Ciclovia de domingo</h5>
+                                <p>Ciudad: Ibagué</p>
+                                <p>Personas: 7</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../src/Caminata.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h5>Evento: Caminata a la finca</h5>
+                                <p>Ciudad: Pereira</p>
+                                <p>Personas: 9</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../src/cine.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption">
+                                <h5>Evento: Cine pelicula estreno</h5>
+                                <p>Ciudad: Medellín</p>
+                                <p>Personas: 4</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+
+
+            <div id="cards-lugares" class="d-flex flex-column gap-3">
+                <h3 id="generales" class="text-center">Recomendaciones generales</h3>
+                <div class="cards-places"></div>
+            </div>
+
+            <button id="verMasBtn" class="ver-mas-btn btn-color">Mostrar más lugares</button>
+            </div>
+        </section>
+
+
+        <!-- <section id="lugares" class="cards-section">
             <section class="encabezado-lugares">
                 <h4>Lugares recomendados en Colombia</h4>
                 <p>Estos son algunos lugares a los que podrias visitar y armar un parche desde nuestro aplicativo</p>
@@ -71,7 +166,8 @@
             </section>
             <div class="cards-places"></div>
             <button id="verMasBtn" class="ver-mas-btn btn-color">Mostrar más lugares</button>
-        </section>
+        </section> -->
+
     </main>
 
     <footer class="text-center">
