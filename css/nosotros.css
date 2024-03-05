@@ -19,9 +19,9 @@ body {
     font-family: 'Quicksand', sans-serif;
     padding: 0;
     margin-top: 50px;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
-    grid-template-rows: auto 1fr auto;
 }
 
 /* nav */
@@ -360,11 +360,11 @@ ul {
 }
 footer {
     background-color: #221c23c5;
+    width: 100%;
     color: white;
     font-weight: bold;
     margin-top: auto;
-    width: 100%;
-    height: 80px;
+    height: 100px;
 }
 
 @media screen and (max-width: 680px) {
