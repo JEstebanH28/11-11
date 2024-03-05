@@ -1,0 +1,38 @@
+/* cards-caracteristicas */
+.card {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.336);
+    cursor: pointer;
+    min-height: 250px;
+    border: none;
+  }
+
+  .card:hover {
+    background-color: #5b595ce9;
+  }
+  
+  .white-bg {
+    background-color: #f6e9f9e9;
+    color: black;
+  }
+  
+  .black-bg {
+    background-color: rgba(240, 156, 123, 0.207);
+    color: black;
+  }
+
+  .cards-caracteristicas {
+    margin: 20px 0;
+  }
+  .cards-caracteristicas img {
+    width: 200px;
+    max-height: 170px;
+  }
+  
+  @media (max-width: 600px) {
+    .card {
+      width: calc(100% - 40px);
+    }
+  }
