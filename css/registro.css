@@ -204,7 +204,7 @@ body {
     position: absolute;
     right: 15px;
     bottom: 31px;
-    z-index: 100;
+    z-index: 10;
     font-size: 16px;
     opacity: 0;
 }
@@ -258,3 +258,17 @@ body {
 .form-grupo-incorrecto .fields {
     border: 3px solid #bb2929;
 }
+
+
+
+
+@media (min-width: 900px) {
+    .form-validacion {
+        right: 33px;
+        bottom: 45px;
+    }
+
+    #ciudades {
+        padding: 2.8%;
+    }
+  }
