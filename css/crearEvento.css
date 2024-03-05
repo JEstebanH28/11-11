@@ -94,8 +94,70 @@ body {
 
 
 }
+@media(min-width: 900px){
+    #formulario-evento{
+        height:800px;
+        width: 900px;
+        padding: 0 30px;
+        -webkit-box-shadow: 0px 0px 21px -7px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 21px -7px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 21px -7px rgba(0,0,0,0.75);
+        border-radius: 10px;
+        background-color: #fff;
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        max-width: 1000px 
+    }
+    
+    .fields{
+        width: 100%;
+        text-decoration: none;
+        border-radius: 5px;
+        border-color: var(--background);
+        padding: 4%;  
+        margin-bottom: 20px;
+        transition: .3s ease all;
+    }
+    
+    .field-opcion{
+        color: var(--gris);
+        width: 100%;
+        border: 2px inset;
+        text-decoration: none;
+        border-radius: 5px;
+        border-color: var(--background);
+        margin-bottom: 20px;
+        transition: .3s ease all;
+    }
+    .fields:focus {
+        box-shadow: 3px 0px 30px rgba(120, 103, 103, 0.4);
+    }
+    .button {
+    background: var(--boton);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    display: block;
+    width: 270px;
+    height: 50px;
+    margin: none;
+    margin: 20px;
 
+}
 
+.button:hover {
+    background: linear-gradient(90deg, rgba(150, 38, 162, 1) 0%, rgba(255, 106, 0, 1) 0%, rgba(161, 24, 148, 1) 64%);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+  
+    #nombre{
+        margin-top:40px;
+    
+    }
+}
+  
 /* cards */
 #listaEventos {
     display: flex;
