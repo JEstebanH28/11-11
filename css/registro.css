@@ -21,7 +21,10 @@ body {
     color: black;
     font-family: 'Quicksand', sans-serif;
     padding: 0;
-    margin: 112px;
+}
+
+.formulario {
+    margin-top: 100px;
 }
 
 /* estilos para formulario */

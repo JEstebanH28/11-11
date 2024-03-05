@@ -11,6 +11,7 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <link rel="stylesheet" href="../css/nosotros.css">
   <link rel="stylesheet" href="../css/registro.css">
+  <link rel="stylesheet" href="../css/footer.css">
 </head>
 
 <body>
@@ -50,128 +51,167 @@
     </nav>
   </header>
   <main>
+    <section class="formulario">
+      <h1 id="h1">¡Primero lo primero!</h1>
+      <h2 id="h2">Realiza tu Registro</h2>
+      <h4 id="h4">Todos los campos son obligatorios para crear tu perfil*</h4>
 
-    <h1 id="h1">¡Primero lo primero!</h1>
-    <h2 id="h2">Realiza tu Registro</h2>
-    <h4 id="h4">Todos los campos son obligatorios para crear tu perfil*</h4>
+      <div class="container-form">
 
-    <div class="container-form">
-
-      <form id="formulario-evento">
-        <div class="form-grupo" id="grupo-nombre">
-          <div class="form-grupo-input">
-            <input id="nombre" class="fields" placeholder="Nombre y Apellidos" type="text" name="nombre"><br>
-            <i class="form-validacion fa-solid fa-circle-xmark"></i>
+        <form id="formulario-evento">
+          <div class="form-grupo" id="grupo-nombre">
+            <div class="form-grupo-input">
+              <input id="nombre" class="fields" placeholder="Nombre y Apellidos" type="text" name="nombre"><br>
+              <i class="form-validacion fa-solid fa-circle-xmark"></i>
+            </div>
+            <p class="form-input-error">El nombre debe ser mayor a dos palabras</p>
           </div>
-          <p class="form-input-error">El nombre debe ser mayor a dos palabras</p>
-        </div>
 
-        <div class="form-grupo" id="grupo-nacimiento">
-          <div class="form-grupo-input">
-            <input class="fields tiempo" class="fields" placeholder="Fecha nacimiento" type="date" id="nacimiento"
-              name="nacimiento"><br>
+          <div class="form-grupo" id="grupo-nacimiento">
+            <div class="form-grupo-input">
+              <input class="fields tiempo" class="fields" placeholder="Fecha nacimiento" type="date" id="nacimiento"
+                name="nacimiento"><br>
+            </div>
+            <p class="form-input-error">Debe ser mayor de 18 años, y tener una fecha correcta</p>
           </div>
-          <p class="form-input-error">Debe ser mayor de 18 años, y tener una fecha correcta</p>
-        </div>
 
-        <div class="form-grupo" id="grupo-username">
-          <div class="form-grupo-input">
-            <input class="fields" placeholder="Usuario" type="text" id="username" name="username"><br>
-            <i class="form-validacion fa-solid fa-circle-xmark"></i>
+          <div class="form-grupo" id="grupo-username">
+            <div class="form-grupo-input">
+              <input class="fields" placeholder="Usuario" type="text" id="username" name="username"><br>
+              <i class="form-validacion fa-solid fa-circle-xmark"></i>
+            </div>
+            <p class="form-input-error">El usuario debe contener entre 4 y 16 carácteres</p>
           </div>
-          <p class="form-input-error">El usuario debe contener entre 4 y 16 carácteres</p>
-        </div>
 
-        <div class="form-grupo" id="grupo-password">
-          <div class="form-grupo-input">
-            <input class="fields" placeholder="Contraseña" type="password" id="password" name="password"><br>
-            <i class="form-validacion fa-solid fa-circle-xmark"></i>
+          <div class="form-grupo" id="grupo-password">
+            <div class="form-grupo-input">
+              <input class="fields" placeholder="Contraseña" type="password" id="password" name="password"><br>
+              <i class="form-validacion fa-solid fa-circle-xmark"></i>
+            </div>
+            <p class="form-input-error">La contraseña debe contener mayusuculas, minusculas y caracteres especiales</p>
           </div>
-          <p class="form-input-error">La contraseña debe contener mayusuculas, minusculas y caracteres especiales</p>
-        </div>
 
-        <div class="form-grupo" id="grupo-confirmPassword">
-          <div class="form-grupo-input">
-            <input class="fields" placeholder="Confirmar Contraseña" type="password" id="confirmPassword"
-              name="confirmPassword"><br>
-            <i class="form-validacion fa-solid fa-circle-xmark"></i>
+          <div class="form-grupo" id="grupo-confirmPassword">
+            <div class="form-grupo-input">
+              <input class="fields" placeholder="Confirmar Contraseña" type="password" id="confirmPassword"
+                name="confirmPassword"><br>
+              <i class="form-validacion fa-solid fa-circle-xmark"></i>
+            </div>
+            <p class="form-input-error">La contraseña debe coincidir</p>
           </div>
-          <p class="form-input-error">La contraseña debe coincidir</p>
-        </div>
 
-        <div class="form-grupo" id="grupo-celular">
-          <div class="form-grupo-input">
-            <input class="fields" placeholder="Celular" type="phone" id="celular" name="celular"><br>
-            <i class="form-validacion fa-solid fa-circle-xmark"></i>
+          <div class="form-grupo" id="grupo-celular">
+            <div class="form-grupo-input">
+              <input class="fields" placeholder="Celular" type="phone" id="celular" name="celular"><br>
+              <i class="form-validacion fa-solid fa-circle-xmark"></i>
+            </div>
+            <p class="form-input-error">El teléfono de contener entre 7 y 14 digitos</p>
           </div>
-          <p class="form-input-error">El teléfono de contener entre 7 y 14 digitos</p>
-        </div>
 
-        <div class="form-grupo" id="grupo-email">
-          <div class="form-grupo-input">
-            <input class="fields" placeholder="Email" type="email" id="email" name="email"><br>
-            <i class="form-validacion fa-solid fa-circle-xmark"></i>
+          <div class="form-grupo" id="grupo-email">
+            <div class="form-grupo-input">
+              <input class="fields" placeholder="Email" type="email" id="email" name="email"><br>
+              <i class="form-validacion fa-solid fa-circle-xmark"></i>
+            </div>
+            <p class="form-input-error">El email debe tener un formato de correo</p>
           </div>
-          <p class="form-input-error">El email debe tener un formato de correo</p>
-        </div>
 
-        <div class="form-grupo" id="grupo-confirmEmail">
-          <div class="form-grupo-input">
-            <input class="fields" placeholder="Confirmar Email" type="email" id="confirmEmail" name="confirmEmail"><br>
-            <i class="form-validacion fa-solid fa-circle-xmark"></i>
+          <div class="form-grupo" id="grupo-confirmEmail">
+            <div class="form-grupo-input">
+              <input class="fields" placeholder="Confirmar Email" type="email" id="confirmEmail"
+                name="confirmEmail"><br>
+              <i class="form-validacion fa-solid fa-circle-xmark"></i>
+            </div>
+            <p class="form-input-error">El correo debe coincidir</p>
           </div>
-          <p class="form-input-error">El correo debe coincidir</p>
-        </div>
 
-        <div class="form-grupo" id="grupo-ciudad">
-          <div class="form-grupo-input">
-            <select placeholder="Confirmar Email" class="field-opcion" id="ciudades" >
-              <option value="">Selecciona una ciudad</option>
-              <option value="Bogotá">Bogotá</option>
-              <option value="Medellín">Medellín</option>
-              <option value="Cali">Cali</option>
-              <option value="Barranquilla">Barranquilla</option>
-              <option value="Cartagena">Cartagena</option>
-              <option value="Cúcuta">Cúcuta</option>
-              <option value="Bucaramanga">Bucaramanga</option>
-              <option value="Pereira">Pereira</option>
-              <option value="Santa Marta">Santa Marta</option>
-              <option value="Ibagué">Ibagué</option>
-              <option value="Villavicencio">Villavicencio</option>
-              <option value="Neiva">Neiva</option>
-              <option value="Armenia">Armenia</option>
-              <option value="Manizales">Manizales</option>
-              <option value="Pasto">Pasto</option>
-              <option value="Montería">Montería</option>
-              <option value="Valledupar">Valledupar</option>
-              <option value="Popayán">Popayán</option>
-              <option value="Buenaventura">Buenaventura</option>
-              <option value="Sincelejo">Sincelejo</option>
-          </select>
+          <div class="form-grupo" id="grupo-ciudad">
+            <div class="form-grupo-input">
+              <select placeholder="Confirmar Email" class="field-opcion" id="ciudades">
+                <option value="">Selecciona una ciudad</option>
+                <option value="Bogotá">Bogotá</option>
+                <option value="Medellín">Medellín</option>
+                <option value="Cali">Cali</option>
+                <option value="Barranquilla">Barranquilla</option>
+                <option value="Cartagena">Cartagena</option>
+                <option value="Cúcuta">Cúcuta</option>
+                <option value="Bucaramanga">Bucaramanga</option>
+                <option value="Pereira">Pereira</option>
+                <option value="Santa Marta">Santa Marta</option>
+                <option value="Ibagué">Ibagué</option>
+                <option value="Villavicencio">Villavicencio</option>
+                <option value="Neiva">Neiva</option>
+                <option value="Armenia">Armenia</option>
+                <option value="Manizales">Manizales</option>
+                <option value="Pasto">Pasto</option>
+                <option value="Montería">Montería</option>
+                <option value="Valledupar">Valledupar</option>
+                <option value="Popayán">Popayán</option>
+                <option value="Buenaventura">Buenaventura</option>
+                <option value="Sincelejo">Sincelejo</option>
+              </select>
+            </div>
+            <p class="form-input-error">Debe ser una ciudad valida</p>
           </div>
-          <p class="form-input-error">Debe ser una ciudad valida</p>
-        </div>
 
-        <div class="formulario-mensaje-error" id="formulario-mensaje">
-          <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente.
-          </p>
-        </div>
+          <div class="formulario-mensaje-error" id="formulario-mensaje">
+            <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente.
+            </p>
+          </div>
 
-        <button id="buttonRegistrar" class="btn-nav btn-color">Registrarte</button>
-        <p class="formulario-mensaje-exito" id="formulario-mensaje-exito">Formulario enviado exitosamente!</p>
+          <button id="buttonRegistrar" class="btn-nav btn-color">Registrarte</button>
+          <p class="formulario-mensaje-exito" id="formulario-mensaje-exito">Formulario enviado exitosamente!</p>
 
 
-      </form>
-    </div>
+        </form>
+      </div>
+    </section>
   </main>
 
-  <footer class="text-center">
-    <!-- Copyright -->
-    <div class="text-center p-3">
-        © 2024 Copyright: Equipo 11:11
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+      <h3>11 : <span>11</span></h3>
+
+      <p class="footer-links">
+        <a href="../html/index.html">Inicio</a>
+        |
+        <a href="../html/nosotros.html">Nosotros</a>
+        |
+        <a href="../html/nosotros.html#contactanos">Contacto</a>
+        |
+        <a href="../html/parches.html">Parches</a>
+        |
+        <a href="../html/aliados.html">Aliados</a>
+      </p>
+
+      <p class="footer-company-name">Copyright © 2024 <strong>Equipo 11 : 11</strong> Derechos reservados</p>
     </div>
-    <!-- Copyright -->
-    </footer>
+
+    <div class="footer-center">
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>Bogotá,</span>
+          Colombia</p>
+      </div>
+
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>+57 333 333 33 33</p>
+      </div>
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:equiponzeonze@hotmail.com">equiponzeonze@hotmail.com</a></p>
+      </div>
+    </div>
+    <div class="footer-right">
+      <p class="footer-company-about">
+        <span>Sobre nosotros</span>
+        <strong>11 : 11</strong> Es una empresa comprometida con las conexiones interpersonales, especialmente en esta
+        epoca digital. Fomentamos la creación de grupos, nuevas experiencias y aventuras.
+      </p>
+    </div>
+  </footer>
 
   <!-- Script de bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
