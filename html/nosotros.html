@@ -13,7 +13,7 @@
 <body>
   <!-- NAVBAR -->
   <header class="navbar">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary nav-color nav-shadow">
+    <nav class="navbar navbar-expand-lg nav-color nav-shadow">
       <div class="container-fluid px-5">
         <a class="navbar-brand" href="../html/index.html"><img src="../src/logo.svg" class="logo" alt="Logo 11"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -104,36 +104,63 @@
   </section>
 
   <!--    EQUIPO      -->
-  <section class="equipo">
-    <h2 class="text-center py-5">EQUIPO</h2>
-    <div class="container">
-      <div class="panel active" style="background-image: url('../src/augusto.svg')">
-        <div class="contenido" style="display: none;">
-          <!--Contenido inicial Visible-->
+  <div class="cards d-flex justify-content-evenly flex-wrap mt-5 pb-5">
+    <div class="myCard">
+      <div class="innerCard">
+        <div class="frontSide">
+          <img class="imgCard" src="/src/augusto.png" alt="Augusto" />
+          <p class="title">Augusto Pavani</p>
         </div>
-      </div>
-      <div class="panel" style="background-image: url('../src/daniela.svg')">
-        <div class="contenido" style="display: none;">
-          <!--Contenido inicial Visible-->
-        </div>
-      </div>
-      <div class="panel" style="background-image: url('../src/esteban.svg')">
-        <div class="contenido" style="display: none;">
-          <!--Contenido inicial Visible-->
-        </div>
-      </div>
-      <div class="panel" style="background-image: url('../src/july.svg')">
-        <div class="contenido" style="display: none;">
-          <!--Contenido inicial Visible-->
-        </div>
-      </div>
-    </div>
+        <div class="backSide">
+          <p>
+            Software Developer fullstack | Java | Javascript | HTML | CSS | GitHub |<br>
+            Portuguese | English | Spanish | <br>
+            Survey/Caligraphy Engineer |
+          </p>
 
-    <!-- Contenedor de texto -->
-    <div id="textoPersona" class="container" style="display: none;">
-      <p id="contenidoTexto"></p>
+        </div>
+      </div>
     </div>
-  </section>
+    <div class="myCard">
+      <div class="innerCard">
+        <div class="frontSide">
+          <img class="imgCard" src="/src/daniela.png" alt="Daniela" />
+          <p class="title">Daniela Lozano</p>
+        </div>
+        <div class="backSide">
+          <p>Software Developer fullstack | Java | Javascript | HTML | CSS | GitHub | <br>
+            Desarrollo de Software |
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="myCard">
+      <div class="innerCard">
+        <div class="frontSide">
+          <img class="imgCard" src="/src/esteban.png" alt="Esteban" />
+          <p class="title">Esteban Hernández</p>
+        </div>
+        <div class="backSide">
+          <p> HTML | CSS | Bootstrap | JS | Java | Mongo DB | My SQL| Software Developer fullstack | GitHub | <br>
+            Técnico En Sistemas | Técnico Profesional en Soporte de Sistemas Informáticos |
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="myCard">
+      <div class="innerCard">
+        <div class="frontSide">
+          <img class="imgCard" src="/src/july.png" alt="July" />
+          <p class="title">July Villa</p>
+        </div>
+        <div class="backSide">
+          <p> Técnologa en Analisis y Desarrollo de Siatemas de Información | Full Stack Developer | <br>
+            HTML | CSS | MySQL | Bootstrap | Javascript | GitHub | Front End | 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <!-- FORMULARIO DE CONTACTO -->
