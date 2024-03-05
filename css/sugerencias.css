@@ -1,3 +1,40 @@
+.descripcion-parches {
+    width: 70%;
+    padding: 30px 0;
+    background-color: rgba(247, 238, 232, 0.892);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.644);
+    margin: 30px auto;
+    gap: 20px;
+    border-radius: 20px;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.descripcion-parches h4 {
+    color: #333333;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.descripcion-parches .card-title {
+    color: #666666;
+    font-size: 1.3em;
+    line-height: 1.6;
+}
+
+.descripcion-parches button {
+    font-size: 1.1em;
+}
+
+#lugares button a, .descripcion-parches a {
+    text-decoration: none;
+}
+
+main {
+    background-color: #e9e0e0;
+}
+
+/* */
 .descripcion-sugerencias, .encabezado-lugares {
     padding: 40px;
     height: auto;
@@ -6,6 +43,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-size: 1.1em;
  }
 
  .encabezado-lugares {
@@ -32,6 +70,10 @@
  }
  
  /* Cards */
+ #cards-lugares {
+    padding: 30px 0;
+ }
+ 
  .cards-section {
       padding-top: 20px;
       background-color: #ebe8e8;
@@ -49,6 +91,27 @@
       width: 80%;
       margin: auto;
       padding-bottom: 30px;
+  }
+
+  .carrusel-eventos {
+    width: 60%;
+  }
+
+  .carrusel-eventos img {
+    width: 100%;
+    object-fit: cover;
+    height: 450px;
+  }
+
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    /* Fondo semitransparente para que el texto sea legible */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    color: white;
   }
 
   /* CARDS */
@@ -101,4 +164,21 @@
   #verMasBtn {
       padding: 10px 25px;
       margin-bottom: 30px;
+  }
+
+  @media (max-width: 767px) {
+    .carrusel-eventos {
+      width: 90%;
+    }
+
+    .descripcion-parches {
+        width: 90%;
+        font-size: 1.1em;
+        line-height: 1.4;
+    }
+
+    .descripcion-parches button {
+        font-size: 1em;
+    }
+    
   }
