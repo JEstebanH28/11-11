@@ -34,6 +34,10 @@ main {
     background-color: #e9e0e0;
 }
 
+main a{
+    color: white;
+}
+
 /* */
 .descripcion-sugerencias, .encabezado-lugares {
     padding: 40px;
