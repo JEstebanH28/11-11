@@ -100,9 +100,34 @@ body{
     
 }
 
-footer {
-    background-color: #221c23c5;
-    width: 100%;
-    color: white;
-    font-weight: bold;
-}
+@media only screen and (max-width: 767px) {
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      margin-top: 100px;
+      margin-bottom: 50px;
+      justify-items: center;
+    }
+  
+    .container-form {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  
+    .fields,
+    .btn-form {
+      width: 100%;
+    }
+  
+    .btn-form {
+      margin-top: 10px;
+    }
+  
+    .logoInicio {
+      max-width: 150px;
+    }
+  
+    .eslogan {
+      font-size: 22px;
+    }
+  }
