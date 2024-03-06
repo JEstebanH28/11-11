@@ -42,8 +42,13 @@
             // Limpiar el formulario
             limpiarFormulario();
 
-            // Mostrar los eventos guardados
-            mostrarEventosGuardados();  
+            // Mostrar una alerta de éxito
+            alert('El evento se ha creado exitosamente.');
+
+            // Redireccionar al usuario a la página "parches.html"
+            window.location.href = 'eventosLista.html';
+
+            
         }
     }
 
