@@ -7,6 +7,7 @@
     --texto-oscuro: rgb(0, 0, 0);
     --texto-claro: #fff;
     --naranja-logo: #ff5722;
+    --naranja-tarjeta: #ffd5c1;
 }
 
 * {
@@ -35,7 +36,7 @@ header {
 }
 
 .nav-color {
-    background-color: var(--fondo-nav);
+    background-color: #ffd5c1;
 
 }
 .nav-shadow {
@@ -94,7 +95,7 @@ header {
 .btn-acordeon {
     font-weight: bold;
     font-size: 25px;
-    background-color: var(--fondo-nav);
+    background-color: var(--naranja-tarjeta);
     border-color: #5f1f79;
 }
 
@@ -119,7 +120,7 @@ header {
 
 /*Estilo de la sección Equipo*/
 .myCard {
-    width: 460px;
+    width: 300px;
     height: 300px;
     margin-bottom: 2rem;
   }
@@ -127,7 +128,6 @@ header {
   .innerCard {
     width: 100%;
     height: 100%;
-    position: relative;
     transform-style: preserve-3d;
     transition: transform 0.999s;
   }
@@ -137,8 +137,8 @@ header {
   }
 
   .imgCard {
-    width: 400px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
   }
   
@@ -151,8 +151,8 @@ header {
   }
   
   .frontSide {
-    background-color: var(--purple);
-    color: #fff;
+    padding: 15px;
+    background-color: var(--fondo-nav);
     display: flex;
     align-items: center;
     border-radius: 10px;
@@ -161,24 +161,24 @@ header {
   }
   
   .backSide {
-    background-color: #f9753d;
+    padding: 20px;
+    background-color: var(--naranja-tarjeta);
     display: flex;
-    border: 10px solid #f66f36;
     border-radius: 10px;
     justify-content: center;
     transform: rotateY(180deg);
   }
 
   .frontSide {
-    color: white;
+    color: var(--texto-oscuro);
     align-items:center;
     font-size: 30px;
   }
 
   .backSide {
-    color: white;
+    color: var(--texto-oscuro);
     align-items: center;
-    font-size: 24px;
+    font-size: 18px;
   }
   
 
@@ -191,7 +191,7 @@ header {
     margin-left: auto;
     margin-right: auto;
     padding: 1.5em;
-    background-color: black;
+    background-color: var(--naranja-tarjeta);
     color: var(--texto-claro);
     border-radius: 5%;
 }
