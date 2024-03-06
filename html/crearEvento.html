@@ -34,7 +34,7 @@
               <a class="nav-link" href="../html/nosotros.html#contactanos">Contáctanos</a>
             </li>
             <li class="nav-item text-nav">
-              <a class="nav-link" href="../html/parches.html">Parches</a>
+              <a class="nav-link" href="../html/eventosLista.html">Parches</a>
             </li>
             <li class="nav-item text-nav">
               <a class="nav-link" href="../html/aliados.html">Aliados</a>
@@ -76,11 +76,14 @@
       <textarea class="textarea" name="descripcion" id="descripcion" cols="30" rows="10"
         placeholder="Descripción del evento"></textarea>
 
+      <!-- Agregar el input para seleccionar la imagen -->
+      <input type="file" id="imagen" accept="image/*">
+
       <button class="button" type="button" onclick="crearEvento()">Crear Evento</button>
     </form>
   </div>
 
-  <div id="listaEventos"></div>
+  
   <footer class="footer-distributed">
 
     <div class="footer-left">
