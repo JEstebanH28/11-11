@@ -246,7 +246,7 @@ const guardarForm = () => {
 const alertaBienvenida = (nombre) => {
   Swal.fire({
     title: '!Bienvenido a 11 : 11!',
-    text: `Hola, ${nombre}, estas siendo dirigio a iniciar sesión, ya casi comienza tu aventura!`,
+    text: `Hola, ${nombre}, estas siendo dirigido a iniciar sesión, ya casi comienza tu aventura!`,
     icon: 'success',
     timer: 4000, // Mostrar la alerta durante 4 segundos
     timerProgressBar: true, // Mostrar una barra de progreso del temporizador

@@ -7,7 +7,9 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/nosotros.css">
+    
+    <link rel="stylesheet" href="../css/nosotros.css">    
+    <link rel="stylesheet" href="../css/detallesEvento.css">
     <link rel="stylesheet" href="../css/footer.css">
 </head>
 
@@ -24,7 +26,7 @@
                 <div class="collapse navbar-collapse nav-container" id="navbarNav">
                     <ul class="navbar-nav align-items-center">
                         <li class="nav-item text-nav">
-                            <a class="nav-link active" aria-current="page" href="../html/index.html">Inicio</a>
+                            <a class="nav-link" aria-current="page" href="../html/index.html">Inicio</a>
                         </li>
                         <li class="nav-item text-nav">
                             <a class="nav-link" href="../html/nosotros.html">Nosotros</a>
@@ -33,7 +35,7 @@
                             <a class="nav-link" href="../html/nosotros.html#contactanos">Contáctanos</a>
                         </li>
                         <li class="nav-item text-nav">
-                            <a class="nav-link" href="../html/parches.html">Parches</a>
+                            <a class="nav-link active" href="../html/eventosLista.html">Parches</a>
                         </li>
                         <li class="nav-item text-nav">
                             <a class="nav-link" href="../html/aliados.html">Aliados</a>
@@ -47,7 +49,8 @@
             </div>
         </nav>
     </header>
-    <h1> listado de eventos</h1>
+    <h1> Parches Disponibles </h1>
+    <div id="listaEventos"></div>
 
     <footer class="footer-distributed">
 
@@ -100,6 +103,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
+
+    <script src="/JS/iniciarSesion.js"></script>
+    <script src="/JS/crearEvento.js"></script>
 
 </body>
 
