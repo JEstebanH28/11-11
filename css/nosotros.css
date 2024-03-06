@@ -453,6 +453,22 @@ ul {
     .container {
         width: 70%;
     }
+
+    .contacto {
+      font-size: 1.5em;
+    }
+
+    #contactanos {
+      margin: 20px;
+    }
+
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
 }
 
 /* Pantalla grande Contactanos */

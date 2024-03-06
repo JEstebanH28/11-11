@@ -1,0 +1,67 @@
+:root {
+    /* Código 2 */
+    --naranja-tarjeta: #ffd5c1;
+}
+
+/* Estilos para las tarjetas (sección Equipo) - Código 2 */
+.myCard {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 2rem;
+}
+
+.innerCard {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.999s;
+}
+
+.myCard:hover .innerCard {
+    transform: rotateY(180deg);
+}
+
+.imgCard {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.frontSide,
+.backSide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.frontSide {
+    padding: 15px;
+    background-color: var(--fondo-nav);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.backSide {
+    padding: 20px;
+    background-color: var(--naranja-tarjeta);
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    transform: rotateY(180deg);
+}
+
+.frontSide {
+    color: var(--texto-oscuro);
+    align-items:center;
+    font-size: 30px;
+}
+
+.backSide {
+    color: var(--texto-oscuro);
+    align-items: center;
+    font-size: 18px;
+}
