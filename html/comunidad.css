@@ -1,0 +1,19 @@
+#comunidad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+widgetbot {
+    margin-top: 100px;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 576px) {
+    widgetbot {
+      width: 100%; /* Ajusta el ancho del widget de chat para dispositivos móviles */
+      max-width: 400px; /* Define el ancho máximo del widget de chat para evitar que sea demasiado grande en pantallas pequeñas */
+    }
+  }
