@@ -2,7 +2,7 @@
     const usuarioActual = localStorage.getItem('usuarioActual');
 
     // Función para crear un evento
-    function crearEvento() {
+    function crearEvento() {        
         // Obtener los valores del formulario
         let nombre = document.getElementById("nombre").value;
         let ciudad = document.getElementById("ciudad").value;
@@ -34,10 +34,8 @@
                 "participantes": participantes,
                 "descripcion": descripcion,
                 "creador": usuarioActual, // Agregar el usuario actual como el creador del evento
-                
-
             };
-
+            
             // Guardar el nuevo evento en el localStorage
             guardarEvento(nuevoEvento);
 
@@ -45,7 +43,7 @@
             limpiarFormulario();
 
             // Mostrar los eventos guardados
-            mostrarEventosGuardados();            
+            mostrarEventosGuardados();  
         }
     }
 

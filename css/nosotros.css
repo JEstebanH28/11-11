@@ -1,414 +1,335 @@
 :root {
-    --purple: rgba(150, 38, 162, 1);
-    --purple-light: #d8a1ff;
-    --purple-shadow: #baa4c9;
-    --fondo-nav: #f6dbfc;
-    --boton: linear-gradient(90deg, rgba(150, 38, 162, 1) 0%, rgba(161, 24, 148, 1) 43%, rgba(255, 106, 0, 1) 100%);
-    --texto-oscuro: rgb(0, 0, 0);
-    --texto-claro: #fff;
-    --naranja-logo: #ff5722;
-    --naranja-tarjeta: #ffd5c1;
+  --purple: rgba(150, 38, 162, 1);
+  --purple-light: #d8a1ff;
+  --purple-shadow: #baa4c9;
+  --fondo-nav: #f6dbfc;
+  --boton: linear-gradient(90deg, rgba(150, 38, 162, 1) 0%, rgba(161, 24, 148, 1) 43%, rgba(255, 106, 0, 1) 100%);
+  --texto-oscuro: rgb(0, 0, 0);
+  --texto-claro: #fff;
+  --naranja-logo: #ff5722;
+  --naranja-tarjeta: #ffd5c1;
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    color: black;
-    line-height: 1.6;
-    font-family: 'Quicksand', sans-serif;
-    padding: 0;
-    margin-top: 50px;
-    position: relative;
+  color: black;
+  line-height: 1.6;
+  font-family: 'Quicksand', sans-serif;
+  padding: 0;
+  margin-top: 50px;
+  position: relative;
 }
 
 /* nav */
 header {
-    z-index: 1000;
+  z-index: 1000;
 }
 
 .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 80PX;
-    z-index: 100;
-    left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  left: 0;
 }
 
 .nav-color {
-    background-color: #ffd5c1;
+  background-color: #f9ddff;
 
 }
 .nav-shadow {
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.119);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.119);
 }
 
-
-  
-  div.espacio3D {
-    width: 200px;
-    height: 200px;
-    margin: 1em auto 0 auto;
-    border: 1px solid rgba(0,255,0,0.5);
-    position: relative;
-    perspective-origin: center -100%;
-    perspective: 800px;
-    transform: scale(0.5);
-  }
-  
-  div.cubo3D {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    transform-style: preserve-3d;
-    animation-name: gira;
-    animation-duration: 3000ms;
-    transform: rotateX(0deg) rotateY(-40deg);
-   }
-  
-  div.base {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: rgba(255, 254, 254, 0.993);
-    transform: translateX(75px) translateY(75px) rotateX(85deg) translateZ(-200px);
-  }
-  aside.cara {
-    position: absolute;
-    width: 298px;
-    height: 298px;
-    text-align: left;
-    box-shadow: 0px 0px 5px rgba(252, 252, 252, 0.975);
-  }
-  
-  .cara img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-  }
-  
-  aside.cara1 { /* Frente */
-    transform: translateZ(150px);
-  }
-  
-  aside.cara2 { /* Atrás */
-    transform: rotateY(180deg) translateZ(150px);
-  }
-  
-  aside.cara3 { /* Izquierda */
-    transform: rotateY(-90deg) translateZ(150px);
-  }
-  
-  aside.cara4 { /* derecha */
-    transform: rotateY(90deg) translateZ(150px);
-  }
-  
-  aside.cara5 { /* abajo */
-    transform: rotateX(-90deg) translateZ(150px);
-  }
-  
-  aside.cara6 { /* arriba */
-    transform: rotateX(90deg) translateZ(150px);
-  }
-  
-
-  @keyframes gira {
-    50% {
-      transform: translateZ(-150px) rotateY(180deg);
-    }
-    100% {
-      transform: translateZ(-150px) rotateY(180deg);
-    }
-  }
-
-.nav-color {
-    background: var(--fondo-nav);
+.logo {
+  width: 50px;
 }
 
 .nav-container {
-    flex-grow: 0;
+  flex-grow: 0;
 }
 
 .nav-container ul {
-    gap: 20px;
+  gap: 20px;
 }
 
 .nav-container .text-nav:hover {
-    border-bottom: 2px solid var(--purple);
-    font-weight: bold;
+  border-bottom: 2px solid var(--purple);
+  font-weight: bold;
 }
 
 .nav-link {
-    padding: 10px 20px;
+  padding: 10px 20px;
 }
 
 .nav-link.active {
-    border-bottom: 2px solid var(--purple);
-    font-weight: bold;
+  border-bottom: 2px solid var(--purple);
+  font-weight: bold;
 }
 
 
 .btn-nav {
-    border-radius: 20px;
-    width: 100%;
+  border-radius: 20px;
+  width: 100%;
 }
 
 
 .btn-color {
-    background: rgb(150, 38, 162);
-    background: var(--boton);
-    border: none;
-    color:var(--texto-claro);
-    font-weight: bold;
+  background: rgb(150, 38, 162);
+  background: var(--boton);
+  border: none;
+  color: white;
+  font-weight: bold;
 }
 
 .btn-color:hover {
-    background: rgba(150, 38, 162, 0.53);
-    background: linear-gradient(90deg, rgba(205, 155, 210, 0.382) 0%, rgba(255, 106, 0, 1) 0%, rgba(161, 24, 148, 1) 64%);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  background: rgba(150, 38, 162, 0.53);
+  background: linear-gradient(90deg, rgba(205, 155, 210, 0.382) 0%, rgba(255, 106, 0, 1) 0%, rgba(161, 24, 148, 1) 64%);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .btn-color a {
-    color: white;
+  color: white;
 }
 
 main {
-    margin-top: 50px;
+  margin-top: 50px;
 }
-
 
 /* Acerca de nosotros */
 .nosotros {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 .btn-acordeon {
-    font-weight: bold;
-    font-size: 25px;
-    background-color: var(--naranja-tarjeta);
-    border-color: #5f1f79;
+  font-weight: bold;
+  font-size: 25px;
+  background-color: var(--naranja-tarjeta);
+  border-color: #5f1f79;
 }
 
 .accordion {
-    --bs-accordion-btn-focus-box-shadow: 0;
+  --bs-accordion-btn-focus-box-shadow: 0;
 }
 
 .accordion-body {
-    font-weight:200;
-    font-size: 25px;
+  font-weight: 200;
+  font-size: 25px;
 }
 
 .accordion-button:not(.collapsed) {
-    background: var(--boton);
+  background: var(--boton);
 }
 
 .accordion-button:not(.collapsed) {
-    box-shadow: none;
-    color: black;
+  box-shadow: none;
+  color: black;
 }
+
 /* Fin acerca de nosotros */
 
 /*Estilo de la sección Equipo*/
 .myCard {
-    width: 300px;
-    height: 300px;
-    margin-bottom: 2rem;
-  }
-  
-  .innerCard {
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: transform 0.999s;
-  }
-  
-  .myCard:hover .innerCard {
-    transform: rotateY(180deg);
-  }
+  width: 300px;
+  height: 300px;
+  margin-bottom: 2rem;
+}
 
-  .imgCard {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-  }
-  
-  .frontSide,
-  .backSide {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-  }
-  
-  .frontSide {
-    padding: 15px;
-    background-color: var(--fondo-nav);
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-    justify-content: center;
-    font-size: 24px;
-  }
-  
-  .backSide {
-    padding: 20px;
-    background-color: var(--naranja-tarjeta);
-    display: flex;
-    border-radius: 10px;
-    justify-content: center;
-    transform: rotateY(180deg);
-  }
+.innerCard {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.999s;
+}
 
-  .frontSide {
-    color: var(--texto-oscuro);
-    align-items:center;
-    font-size: 30px;
-  }
+.myCard:hover .innerCard {
+  transform: rotateY(180deg);
+}
 
-  .backSide {
-    color: var(--texto-oscuro);
-    align-items: center;
-    font-size: 18px;
-  }
-  
+.imgCard {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.frontSide,
+.backSide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.frontSide {
+  padding: 15px;
+  background-color: var(--fondo-nav);
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.backSide {
+  padding: 20px;
+  background-color: var(--naranja-tarjeta);
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  transform: rotateY(180deg);
+}
+
+.frontSide {
+  color: var(--texto-oscuro);
+  align-items: center;
+  font-size: 30px;
+}
+
+.backSide {
+  color: var(--texto-oscuro);
+  align-items: center;
+  font-size: 18px;
+}
+
 
 /* FIN SECCION EQUIPO*/
 
 /* Contacto */
 
 .content {
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1.5em;
-    background-color: var(--naranja-tarjeta);
-    color: var(--texto-claro);
-    border-radius: 5%;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+  background-color: var(--naranja-tarjeta);
+  color: var(--texto-claro);
+  border-radius: 5%;
 }
 
 .contacto {
-    text-align: center;
-    font-size: 3em;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    color: var(--texto-claro);
-    padding-top: 2rem;
-    padding-bottom: 3rem;
-    ;
+  text-align: center;
+  font-size: 3em;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: var(--texto-claro);
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  ;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+.contact-info ul {
+  list-style: none;
+  padding: 0;
 }
 
 .contact-wrapper {
-    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
-    border-radius: 5%;
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+  border-radius: 5%;
 }
 
 .contact-wrapper>* {
-    padding: 1em;
+  padding: 1em;
 }
 
 .contact-form form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
 }
 
 .contact-form form label {
-    display: block;
+  display: block;
 }
 
 .contact-form form p {
-    margin: 0;
-    padding: 1em;
+  margin: 0;
+  padding: 1em;
 }
 
 .contact-form form .block {
-    grid-column: 1 / 3;
+  grid-column: 1 / 3;
 }
 
 .contact-form form button,
 .contact-form form input,
 .contact-form form textarea {
-    width: 100%;
-    padding: .7em;
-    border: none;
-    background: none;
-    outline: 0;
-    color: var(--texto-claro);
-    border-bottom: 1px solid var(--naranja-logo);
+  width: 100%;
+  padding: .7em;
+  border: none;
+  background: none;
+  outline: 0;
+  color: var(--texto-claro);
+  border-bottom: 1px solid var(--naranja-logo);
 }
 
 .contact-form form button {
-    background: var(--boton);
-    border: 0;
-    text-transform: uppercase;
-    padding: 1em;
+  background: var(--boton);
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
 }
 
 .contact-form form button:hover,
 .contact-form form button:focus {
-    background: linear-gradient(90deg, rgba(150, 38, 162, 1) 0%, rgba(161, 24, 148, 1) 43%, rgba(255, 106, 0, 1) 100%);
-    color: #fff;
-    transition: background-color 1s ease-out;
-    outline: 0;
+  background: linear-gradient(90deg, rgba(150, 38, 162, 1) 0%, rgba(161, 24, 148, 1) 43%, rgba(255, 106, 0, 1) 100%);
+  color: #fff;
+  transition: background-color 1s ease-out;
+  outline: 0;
 }
 
 /* CONTACT INFO */
 .contact-info {
-    background-color: #1f1d1d;
-    border-radius: 5%;
+  background-color: #1f1d1d;
+  border-radius: 5%;
 }
 
 .contact-info h4,
 .contact-info ul,
 .contact-info p {
-    text-align: center;
-    margin: 0 0 1rem 0;
+  text-align: center;
+  margin: 0 0 1rem 0;
 }
 
 .registro-tipo {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .registro-tipo input[type="radio"] {
-    display: none;
+  display: none;
 }
 
 .registro-tipo label {
-    position: relative;
-    padding-left: 30px;
-    cursor: pointer;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
 }
 
 /* Estilos para el círculo que representa el botón de radio seleccionado */
 .registro-tipo label::before {
-    content: '';
-    display: inline-block;
-    width: 20px;
-    /* Tamaño del círculo */
-    height: 20px;
-    /* Tamaño del círculo */
-    border-radius: 50%;
-    /* Hace que el círculo sea redondeado */
-    border: 2px solid var(--purple-light);
-    /* Color del borde del círculo */
-    background-color: white;
-    /* Color de fondo del círculo */
-    position: absolute;
-    left: 0;
-    top: 1px;
-    /* Ajusta la posición vertical del círculo */
+  content: '';
+  display: inline-block;
+  width: 20px;
+  /* Tamaño del círculo */
+  height: 20px;
+  /* Tamaño del círculo */
+  border-radius: 50%;
+  /* Hace que el círculo sea redondeado */
+  border: 2px solid var(--purple-light);
+  /* Color del borde del círculo */
+  background-color: white;
+  /* Color de fondo del círculo */
+  position: absolute;
+  left: 0;
+  top: 1px;
+  /* Ajusta la posición vertical del círculo */
 }
 
 .registro-tipo input[type="radio"]:checked+label::before {
-    background-color: var(--purple);
-    /* Cambia el color de fondo del círculo cuando está seleccionado */
+  background-color: var(--purple);
+  /* Cambia el color de fondo del círculo cuando está seleccionado */
 }
 
 /* Fin seccion contacto */
@@ -416,72 +337,89 @@ ul {
 /* Inicio*/
 /* Sección Inicio */
 .hero {
-    height: auto;
-    background-color: var(--fondo-nav);
-    padding: 50px 0!important;
+  height: auto;
+  background-color: var(--fondo-nav);
+  padding: 50px 0 !important;
 
 }
 
 .hero-img {
-    width: 100%;
-    background-image: url('../src/restaurante2Sombreado.png');
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat; 
+  width: 100%;
+  background-image: url('../src/restaurante2Sombreado.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-text {
-    background-color: #f3f3f3e9;
-    border-radius: 20px;
-    padding: 20px;
-    font-size: 1.1em;
-    color: black;
-    margin-top: 20px;
+  background-color: #f3f3f3e9;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 1.1em;
+  color: black;
+  margin-top: 20px;
 }
 
 .hero button {
-    padding: 10px 35px;
-    font-size: 1.3em;
+  padding: 10px 35px;
+  font-size: 1.3em;
 }
 
 
 @media screen and (max-width: 680px) {
-    .nav-container ul {
-        gap: 10px;
-    }
+  .nav-container ul {
+    gap: 10px;
+  }
 
-    .container {
-        width: 70%;
-    }
+  .container {
+    width: 70%;
+  }
+
+  .contacto {
+    font-size: 1.5em;
+  }
+
+  #contactanos {
+    margin: 20px;
+  }
+
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 /* Pantalla grande Contactanos */
 @media screen and (min-width: 768px) {
-    .contact-wrapper {
-      display: flex;
-      justify-content: space-between;
-    }
-    
-    .contact-form {
-      flex-basis: 60%;
-    }
-    
-    .contact-info {
-      flex-basis: 35%;
-    }
+  .contact-wrapper {
+    display: flex;
+    justify-content: space-between;
   }
-  
-  /* Estilos para pantallas pequeñas */
-  @media screen and (max-width: 767px) {
-    .contact-wrapper {
-      flex-direction: column;
-    }
-    
-    .contact-form, .contact-info {
-      width: 100%;
-    }
 
-    .btn-nav a{
-        font-size: 0.8em;
-    }
+  .contact-form {
+    flex-basis: 60%;
   }
+
+  .contact-info {
+    flex-basis: 35%;
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 767px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  .contact-form,
+  .contact-info {
+    width: 100%;
+  }
+
+  .btn-nav a {
+    font-size: 0.8em;
+  }
+}
