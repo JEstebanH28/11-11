@@ -107,7 +107,7 @@ main {
 .btn-acordeon {
   font-weight: bold;
   font-size: 25px;
-  background-color: var(--naranja-tarjeta);
+  background-color: rgb(249, 221, 255);
   border-color: #5f1f79;
 }
 
@@ -121,7 +121,7 @@ main {
 }
 
 .accordion-button:not(.collapsed) {
-  background: var(--boton);
+  background: var(--naranja-tarjeta);
 }
 
 .accordion-button:not(.collapsed) {
@@ -204,8 +204,8 @@ main {
   margin-left: auto;
   margin-right: auto;
   padding: 1.5em;
-  background-color: var(--naranja-tarjeta);
-  color: var(--texto-claro);
+  background-color: rgb(249, 221, 255);
+  color: black;
   border-radius: 5%;
 }
 
@@ -214,7 +214,7 @@ main {
   font-size: 3em;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  color: var(--texto-claro);
+  color: black;
   padding-top: 2rem;
   padding-bottom: 3rem;
   ;
@@ -265,6 +265,11 @@ main {
   border-bottom: 1px solid var(--naranja-logo);
 }
 
+.contact-form form input, .contact-form form textarea  {
+  color: black;
+  border-bottom: 1px solid var(--purple-shadow);
+}
+
 .contact-form form button {
   background: var(--boton);
   border: 0;
@@ -282,7 +287,7 @@ main {
 
 /* CONTACT INFO */
 .contact-info {
-  background-color: #1f1d1d;
+  background-color: rgb(241, 216, 247);
   border-radius: 5%;
 }
 
