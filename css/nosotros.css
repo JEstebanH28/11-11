@@ -64,6 +64,10 @@ header {
     font-weight: bold;
 }
 
+.nav-link {
+    padding: 10px 20px;
+}
+
 .nav-link.active {
     border-bottom: 2px solid var(--purple);
     font-weight: bold;
@@ -396,5 +400,9 @@ ul {
     
     .contact-form, .contact-info {
       width: 100%;
+    }
+
+    .btn-nav a{
+        font-size: 0.8em;
     }
   }
